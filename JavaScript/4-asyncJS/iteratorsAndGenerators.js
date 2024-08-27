@@ -50,7 +50,9 @@
 
 // Generators:
 // No need to create iterator object on our own.
-// No need to mention nextVal
+// No need to mention next&done object.
+
+// Creation:
 function* makeRangeIterator(start = 0, end = Infinity, step = 1) {
   let seqSize = 0; // sequence size
 
