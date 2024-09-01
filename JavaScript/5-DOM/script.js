@@ -26,8 +26,13 @@ function appendTodoInHtml(todoText) {
   deleteBtn.textContent = "Delete";
   deleteBtn.classList.add("deleteBtn");
 
-  todoItem.appendChild(editBtn);
-  todoItem.appendChild(deleteBtn);
+  const completedBtn = document.createElement("button");
+  completedBtn.textContent = "Completed";
+  completedBtn.classList.add("completedBtn");
+
+  todo.appendChild(editBtn);
+  todo.appendChild(deleteBtn);
+  todo.appendChild(completedBtn);
 
   todoList.appendChild(todo);
 }
