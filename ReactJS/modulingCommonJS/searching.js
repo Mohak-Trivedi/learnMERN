@@ -1,4 +1,4 @@
-export function linearSearch(arr, target) {
+function linearSearch(arr, target) {
   for (let i = 0; i < arr.length; i++) {
     if (arr[i] === target) {
       return i; // Return index if found
@@ -7,7 +7,7 @@ export function linearSearch(arr, target) {
   return -1; // Return -1 if not found
 }
 
-export function binarySearch(arr, target) {
+function binarySearch(arr, target) {
   let left = 0;
   let right = arr.length - 1;
 
@@ -25,7 +25,7 @@ export function binarySearch(arr, target) {
   return -1; // Return -1 if not found
 }
 
-export function ternarySearch(arr, left, right, target) {
+function ternarySearch(arr, left, right, target) {
   if (right >= left) {
     let mid1 = left + Math.floor((right - left) / 3);
     let mid2 = right - Math.floor((right - left) / 3);
@@ -48,5 +48,9 @@ export function ternarySearch(arr, left, right, target) {
   return -1; // Return -1 if not found
 }
 
-// OR remove export from each of the above and use:
+// In ESM, for named export we use export before the function definition
+// OR
 // export { linearSearch, binarySearch, ternarySearch };
+
+// In CommonJS, for named export:
+module.exports = { linearSearch, binarySearch, ternarySearch };
