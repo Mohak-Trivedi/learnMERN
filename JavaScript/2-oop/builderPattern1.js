@@ -1,7 +1,7 @@
 class Product {
   constructor(builder) {
     this.name = builder.name;
-    if (builder.price > 0 && typeof builder.price === "number") {
+    if (builder.price > 0) {
       this.price = builder.price;
     } else {
       return {};
