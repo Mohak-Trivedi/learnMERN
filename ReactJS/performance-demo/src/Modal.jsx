@@ -1,9 +1,9 @@
-export default function Modal({ setIsOpen }) {
+export default function Modal({ close }) {
   return (
     <div className="modal">
       <h2>Modal</h2>
       <p>This is a Modal.</p>
-      <button onClick={() => setIsOpen(false)}>Close</button>
+      <button onClick={close}>Close</button>
     </div>
   );
 }
