@@ -1,0 +1,24 @@
+{
+  "words": [
+    { "wordValue": "MANGO", "wordHint": "A fruit" },
+    { "wordValue": "BANANA", "wordHint": "A fruit" },
+    { "wordValue": "INDIA", "wordHint": "A country" },
+    { "wordValue": "LONDON", "wordHint": "A city" },
+    { "wordValue": "ELEPHANT", "wordHint": "A large animal" },
+    { "wordValue": "PYTHON", "wordHint": "A programming language" },
+    { "wordValue": "ATLANTIC", "wordHint": "A major ocean" },
+    { "wordValue": "EVEREST", "wordHint": "A famous peak" },
+    { "wordValue": "MOON", "wordHint": "A celestial body" },
+    { "wordValue": "TENNIS", "wordHint": "A sport" },
+    { "wordValue": "SAHARA", "wordHint": "A desert" },
+    { "wordValue": "COFFEE", "wordHint": "A popular beverage" },
+    { "wordValue": "VIOLIN", "wordHint": "A musical instrument" },
+    { "wordValue": "NEPTUNE", "wordHint": "A planet" },
+    { "wordValue": "PYRAMID", "wordHint": "An ancient structure" },
+    { "wordValue": "EINSTEIN", "wordHint": "A famous physicist" },
+    { "wordValue": "GOOGLE", "wordHint": "A search engine" },
+    { "wordValue": "VOLCANO", "wordHint": "A geological feature" },
+    { "wordValue": "TESLA", "wordHint": "A car brand" },
+    { "wordValue": "JUPITER", "wordHint": "A giant planet" }
+  ]
+}
