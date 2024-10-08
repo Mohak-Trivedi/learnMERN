@@ -6,12 +6,14 @@ import { useState, memo, useCallback, useMemo } from "react";
 const MemoizedSlowComponent = memo(function ModifiedSlowComponent({
   time,
   custom,
+  x,
 }) {
-  return <SlowComponent time={time} custom={custom} />;
+  return <SlowComponent time={time} custom={custom} x={x} />;
 });
 
 function App() {
   const [isOpen, setIsOpen] = useState(false);
+  const [x, setX] = useState(0);
 
   const someFunc = useCallback(() => {}, []);
 
@@ -22,10 +24,11 @@ function App() {
   return (
     <>
       <button onClick={() => setIsOpen(true)}>Open Modal</button>
+      <button onClick={() => setX(x + 1)}>Increment</button>
       {isOpen && <Modal close={() => setIsOpen(false)} />}
       <div>Something Done Here</div>
       <div>Something Done Here</div>
-      <MemoizedSlowComponent time={timeArray} custom={someFunc} />
+      <MemoizedSlowComponent time={timeArray} custom={someFunc} x={x} />
     </>
   );
 }
