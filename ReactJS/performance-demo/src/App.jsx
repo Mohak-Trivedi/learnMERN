@@ -1,5 +1,5 @@
 import "./App.css";
-import SlowComponent from "./SlowComponent";
+// import SlowComponent from "./SlowComponent";
 import Modal from "./Modal";
 import { useState, memo, useCallback, useMemo } from "react";
 import AnotherSlowComponent from "./AnotherSlowComponent";
@@ -13,9 +13,10 @@ import AnotherSlowComponent from "./AnotherSlowComponent";
 // });
 
 const MemoAnotherComponent = memo(AnotherSlowComponent);
-const MemoChild = memo(function Child() {
+
+function Child() {
   return <div>I am a child</div>;
-});
+}
 
 function App() {
   const [isOpen, setIsOpen] = useState(false);
@@ -27,6 +28,10 @@ function App() {
   //   return [1000];
   // }, []);
 
+  const memoChild = useMemo(() => {
+    return <Child />;
+  }, []);
+
   return (
     <>
       <button onClick={() => setIsOpen(true)}>Open Modal</button>
@@ -35,9 +40,7 @@ function App() {
       <div>Something Done Here</div>
       <div>Something Done Here</div>
       {/* <MemoizedSlowComponent time={timeArray} custom={someFunc} x={x} /> */}
-      <MemoAnotherComponent>
-        <MemoChild />
-      </MemoAnotherComponent>
+      <MemoAnotherComponent>{memoChild}</MemoAnotherComponent>
     </>
   );
 }
