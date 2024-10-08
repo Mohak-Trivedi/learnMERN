@@ -15,7 +15,7 @@ function App() {
       {isOpen && <Modal close={() => setIsOpen(false)} />}
       <div>Something Done Here</div>
       <div>Something Done Here</div>
-      <MemoizedSlowComponent time={1000} />
+      <MemoizedSlowComponent time={[1000]} />
     </>
   );
 }
