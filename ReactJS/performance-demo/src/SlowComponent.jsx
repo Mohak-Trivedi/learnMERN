@@ -10,6 +10,6 @@ const waitingForSomething = (ms) => {
 };
 
 export default function SlowComponent({ time }) {
-  waitingForSomething(time);
+  waitingForSomething(time[0]);
   return null;
 }
