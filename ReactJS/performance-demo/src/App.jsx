@@ -4,25 +4,28 @@ import Modal from "./Modal";
 import { useState, memo, useCallback, useMemo } from "react";
 import AnotherSlowComponent from "./AnotherSlowComponent";
 
-const MemoizedSlowComponent = memo(function ModifiedSlowComponent({
-  time,
-  custom,
-  x,
-}) {
-  return <SlowComponent time={time} custom={custom} x={x} />;
-});
+// const MemoizedSlowComponent = memo(function ModifiedSlowComponent({
+//   time,
+//   custom,
+//   x,
+// }) {
+//   return <SlowComponent time={time} custom={custom} x={x} />;
+// });
 
 const MemoAnotherComponent = memo(AnotherSlowComponent);
+const MemoChild = memo(function Child() {
+  return <div>I am a child</div>;
+});
 
 function App() {
   const [isOpen, setIsOpen] = useState(false);
   const [x, setX] = useState(0);
 
-  const someFunc = useCallback(() => {}, []);
+  // const someFunc = useCallback(() => {}, []);
 
-  const timeArray = useMemo(() => {
-    return [1000];
-  }, []);
+  // const timeArray = useMemo(() => {
+  //   return [1000];
+  // }, []);
 
   return (
     <>
@@ -31,9 +34,9 @@ function App() {
       {isOpen && <Modal close={() => setIsOpen(false)} />}
       <div>Something Done Here</div>
       <div>Something Done Here</div>
-      <MemoizedSlowComponent time={timeArray} custom={someFunc} x={x} />
+      {/* <MemoizedSlowComponent time={timeArray} custom={someFunc} x={x} /> */}
       <MemoAnotherComponent>
-        <div>I am a child.</div>
+        <MemoChild />
       </MemoAnotherComponent>
     </>
   );
