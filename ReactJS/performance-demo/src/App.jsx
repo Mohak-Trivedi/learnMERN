@@ -3,7 +3,9 @@ import SlowComponent from "./SlowComponent";
 import Modal from "./Modal";
 import { useState, memo } from "react";
 
-const MemoizedSlowComponent = memo(SlowComponent);
+const MemoizedSlowComponent = memo(function ModifiedSlowComponent({ time }) {
+  return <SlowComponent time={time} />;
+});
 
 function App() {
   const [isOpen, setIsOpen] = useState(false);
@@ -13,7 +15,7 @@ function App() {
       {isOpen && <Modal close={() => setIsOpen(false)} />}
       <div>Something Done Here</div>
       <div>Something Done Here</div>
-      <MemoizedSlowComponent />
+      <MemoizedSlowComponent time={1000} />
     </>
   );
 }
