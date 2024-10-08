@@ -12,13 +12,16 @@ const MemoizedSlowComponent = memo(function ModifiedSlowComponent({
 
 function App() {
   const [isOpen, setIsOpen] = useState(false);
+
+  const someFunc = () => {};
+
   return (
     <>
       <button onClick={() => setIsOpen(true)}>Open Modal</button>
       {isOpen && <Modal close={() => setIsOpen(false)} />}
       <div>Something Done Here</div>
       <div>Something Done Here</div>
-      <MemoizedSlowComponent time={1000} custom={() => {}} />
+      <MemoizedSlowComponent time={1000} custom={someFunc} />
     </>
   );
 }
