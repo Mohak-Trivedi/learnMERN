@@ -1,7 +1,7 @@
 import "./App.css";
 import SlowComponent from "./SlowComponent";
 import Modal from "./Modal";
-import { useState, memo } from "react";
+import { useState, memo, useCallback } from "react";
 
 const MemoizedSlowComponent = memo(function ModifiedSlowComponent({
   time,
@@ -13,7 +13,7 @@ const MemoizedSlowComponent = memo(function ModifiedSlowComponent({
 function App() {
   const [isOpen, setIsOpen] = useState(false);
 
-  const someFunc = () => {};
+  const someFunc = useCallback(() => {}, []);
 
   return (
     <>
