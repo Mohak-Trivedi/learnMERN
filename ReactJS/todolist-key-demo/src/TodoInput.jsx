@@ -4,7 +4,7 @@ export default function TodoInput({ onSubmit }) {
   const [inputValue, setInputValue] = useState("");
 
   function onFormSubmit(e) {
-    e.prevent.default();
+    e.preventDefault();
     onSubmit?.(inputValue);
     setInputValue("");
   }
