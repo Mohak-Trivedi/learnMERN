@@ -11,10 +11,19 @@ function App() {
       setTodos([...todos, { id: todos.length + 1, value: value }]);
     }
   }
+
+  function deleteTodoById(id) {
+    setTodos(
+      todos.filter((todo) => {
+        return todo.id !== id;
+      })
+    );
+  }
+
   return (
     <>
       <TodoInput onSubmit={onTodoFormSubmit} />
-      <TodoList listOfTodos={todos} />
+      <TodoList listOfTodos={todos} onDeleteTodo={deleteTodoById} />
     </>
   );
 }

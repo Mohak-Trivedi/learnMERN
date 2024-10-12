@@ -1,9 +1,10 @@
 import { memo } from "react";
 
-function TodoListItem({ todo }) {
+function TodoListItem({ todo, onDelete }) {
   return (
     <>
       <li>{todo.value}</li>
+      <button onClick={() => onDelete(todo.id)}>X</button>
     </>
   );
 }
