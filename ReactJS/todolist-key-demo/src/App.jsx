@@ -20,7 +20,7 @@ function App() {
     );
   }
 
-  const memoDeleteTodoCallback = useCallback(deleteTodoById, []);
+  const memoDeleteTodoCallback = useCallback(deleteTodoById, [todos]);
 
   return (
     <>
