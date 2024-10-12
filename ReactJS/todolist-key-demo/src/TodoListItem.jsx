@@ -4,7 +4,7 @@ function TodoListItem({ todo, onDelete }) {
   return (
     <>
       <li>{todo.value}</li>
-      <button onClick={() => onDelete(todo.id)}>X</button>
+      <button onClick={() => onDelete(todo.value)}>X</button>
     </>
   );
 }
