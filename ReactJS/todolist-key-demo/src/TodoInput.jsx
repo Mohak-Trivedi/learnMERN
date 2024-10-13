@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Sample from "./Sample";
 
 export default function TodoInput({ onSubmit }) {
   const [inputValue, setInputValue] = useState("");
@@ -19,6 +20,7 @@ export default function TodoInput({ onSubmit }) {
           onChange={(e) => setInputValue(e.target.value)}
         />
         <button type="submit">Add Todo</button>
+        <Sample key={Math.floor(Math.random() * 99)} />
       </form>
     </>
   );
