@@ -1,0 +1,3029 @@
+use sample_mflix
+switched to db sample_mflix
+ 
+ 
+show dbs
+sample_mflix     100.20 MiB
+sample_training    7.28 MiB
+admin            328.00 KiB
+local            123.52 GiB
+use sample_mflix
+already on db sample_mflix
+show collections
+comments
+embedded_movies
+movies
+sessions
+theaters
+users
+db
+sample_mflix
+db.movies.find()
+{
+  _id: ObjectId('573a1390f29313caabcd42e8'),
+  plot: 'A group of bandits stage a brazen train hold-up, only to find a determined posse hot on their heels.',
+  genres: [
+    'Short',
+    'Western'
+  ],
+  runtime: 11,
+  cast: [
+    'A.C. Abadie',
+    "Gilbert M. 'Broncho Billy' Anderson",
+    'George Barnes',
+    'Justus D. Barnes'
+  ],
+  poster: 'https://m.media-amazon.com/images/M/MV5BMTU3NjE5NzYtYTYyNS00MDVmLWIwYjgtMmYwYWIxZDYyNzU2XkEyXkFqcGdeQXVyNzQzNzQxNzI@._V1_SY1000_SX677_AL_.jpg',
+  title: 'The Great Train Robbery',
+  fullplot: "Among the earliest existing films in American cinema - notable as the first film that presented a narrative story to tell - it depicts a group of cowboy outlaws who hold up a train and rob the passengers. They are then pursued by a Sheriff's posse. Several scenes have color included - all hand tinted.",
+  languages: [
+    'English'
+  ],
+  released: 1903-12-01T00:00:00.000Z,
+  directors: [
+    'Edwin S. Porter'
+  ],
+  rated: 'TV-G',
+  awards: {
+    wins: 1,
+    nominations: 0,
+    text: '1 win.'
+  },
+  lastupdated: '2015-08-13 00:27:59.177000000',
+  year: 1903,
+  imdb: {
+    rating: 7.4,
+    votes: 9847,
+    id: 439
+  },
+  countries: [
+    'USA'
+  ],
+  type: 'movie',
+  tomatoes: {
+    viewer: {
+      rating: 3.7,
+      numReviews: 2559,
+      meter: 75
+    },
+    fresh: 6,
+    critic: {
+      rating: 7.6,
+      numReviews: 6,
+      meter: 100
+    },
+    rotten: 0,
+    lastUpdated: 2015-08-08T19:16:10.000Z
+  },
+  num_mflix_comments: 0
+}
+{
+  _id: ObjectId('573a1390f29313caabcd446f'),
+  plot: "A greedy tycoon decides, on a whim, to corner the world market in wheat. This doubles the price of bread, forcing the grain's producers into charity lines and further into poverty. The film...",
+  genres: [
+    'Short',
+    'Drama'
+  ],
+  runtime: 14,
+  cast: [
+    'Frank Powell',
+    'Grace Henderson',
+    'James Kirkwood',
+    'Linda Arvidson'
+  ],
+  num_mflix_comments: 1,
+  title: 'A Corner in Wheat',
+  fullplot: "A greedy tycoon decides, on a whim, to corner the world market in wheat. This doubles the price of bread, forcing the grain's producers into charity lines and further into poverty. The film continues to contrast the ironic differences between the lives of those who work to grow the wheat and the life of the man who dabbles in its sale for profit.",
+  languages: [
+    'English'
+  ],
+  released: 1909-12-13T00:00:00.000Z,
+  directors: [
+    'D.W. Griffith'
+  ],
+  rated: 'G',
+  awards: {
+    wins: 1,
+    nominations: 0,
+    text: '1 win.'
+  },
+  lastupdated: '2015-08-13 00:46:30.660000000',
+  year: 1909,
+  imdb: {
+    rating: 6.6,
+    votes: 1375,
+    id: 832
+  },
+  countries: [
+    'USA'
+  ],
+  type: 'movie',
+  tomatoes: {
+    viewer: {
+      rating: 3.6,
+      numReviews: 109,
+      meter: 73
+    },
+    lastUpdated: 2015-05-11T18:36:53.000Z
+  }
+}
+{
+  _id: ObjectId('573a1390f29313caabcd4803'),
+  plot: 'Cartoon figures announce, via comic strip balloons, that they will move - and move they do, in a wildly exaggerated style.',
+  genres: [
+    'Animation',
+    'Short',
+    'Comedy'
+  ],
+  runtime: 7,
+  cast: [
+    'Winsor McCay'
+  ],
+  num_mflix_comments: 0,
+  poster: 'https://m.media-amazon.com/images/M/MV5BYzg2NjNhNTctMjUxMi00ZWU4LWI3ZjYtNTI0NTQxNThjZTk2XkEyXkFqcGdeQXVyNzg5OTk2OA@@._V1_SY1000_SX677_AL_.jpg',
+  title: 'Winsor McCay, the Famous Cartoonist of the N.Y. Herald and His Moving Comics',
+  fullplot: 'Cartoonist Winsor McCay agrees to create a large set of drawings that will be photographed and made into a motion picture. The job requires plenty of drawing supplies, and the cartoonist must also overcome some mishaps caused by an assistant. Finally, the work is done, and everyone can see the resulting animated picture.',
+  languages: [
+    'English'
+  ],
+  released: 1911-04-08T00:00:00.000Z,
+  directors: [
+    'Winsor McCay',
+    'J. Stuart Blackton'
+  ],
+  writers: [
+    'Winsor McCay (comic strip "Little Nemo in Slumberland")',
+    'Winsor McCay (screenplay)'
+  ],
+  awards: {
+    wins: 1,
+    nominations: 0,
+    text: '1 win.'
+  },
+  lastupdated: '2015-08-29 01:09:03.030000000',
+  year: 1911,
+  imdb: {
+    rating: 7.3,
+    votes: 1034,
+    id: 1737
+  },
+  countries: [
+    'USA'
+  ],
+  type: 'movie',
+  tomatoes: {
+    viewer: {
+      rating: 3.4,
+      numReviews: 89,
+      meter: 47
+    },
+    lastUpdated: 2015-08-20T18:51:24.000Z
+  }
+}
+{
+  _id: ObjectId('573a1390f29313caabcd4eaf'),
+  plot: 'A woman, with the aid of her police officer sweetheart, endeavors to uncover the prostitution ring that has kidnapped her sister, and the philanthropist who secretly runs it.',
+  genres: [
+    'Crime',
+    'Drama'
+  ],
+  runtime: 88,
+  cast: [
+    'Jane Gail',
+    'Ethel Grandin',
+    'William H. Turner',
+    'Matt Moore'
+  ],
+  num_mflix_comments: 1,
+  poster: 'https://m.media-amazon.com/images/M/MV5BYzk0YWQzMGYtYTM5MC00NjM2LWE5YzYtMjgyNDVhZDg1N2YzXkEyXkFqcGdeQXVyMzE0MjY5ODA@._V1_SY1000_SX677_AL_.jpg',
+  title: 'Traffic in Souls',
+  lastupdated: '2015-09-15 02:07:14.247000000',
+  languages: [
+    'English'
+  ],
+  released: 1913-11-24T00:00:00.000Z,
+  directors: [
+    'George Loane Tucker'
+  ],
+  rated: 'TV-PG',
+  awards: {
+    wins: 1,
+    nominations: 0,
+    text: '1 win.'
+  },
+  year: 1913,
+  imdb: {
+    rating: 6,
+    votes: 371,
+    id: 3471
+  },
+  countries: [
+    'USA'
+  ],
+  type: 'movie',
+  tomatoes: {
+    viewer: {
+      rating: 3,
+      numReviews: 85,
+      meter: 57
+    },
+    dvd: 2008-08-26T00:00:00.000Z,
+    lastUpdated: 2015-08-10T18:33:55.000Z
+  }
+}
+{
+  _id: ObjectId('573a1390f29313caabcd50e5'),
+  plot: 'The cartoonist, Winsor McCay, brings the Dinosaurus back to life in the figure of his latest creation, Gertie the Dinosaur.',
+  genres: [
+    'Animation',
+    'Short',
+    'Comedy'
+  ],
+  runtime: 12,
+  cast: [
+    'Winsor McCay',
+    'George McManus',
+    'Roy L. McCardell'
+  ],
+  num_mflix_comments: 0,
+  poster: 'https://m.media-amazon.com/images/M/MV5BMTQxNzI4ODQ3NF5BMl5BanBnXkFtZTgwNzY5NzMwMjE@._V1_SY1000_SX677_AL_.jpg',
+  title: 'Gertie the Dinosaur',
+  fullplot: 'Winsor Z. McCay bets another cartoonist that he can animate a dinosaur. So he draws a big friendly herbivore called Gertie. Then he get into his own picture. Gertie walks through the picture, eats a tree, meets her creator, and takes him carefully on her back for a ride.',
+  languages: [
+    'English'
+  ],
+  released: 1914-09-15T00:00:00.000Z,
+  directors: [
+    'Winsor McCay'
+  ],
+  writers: [
+    'Winsor McCay'
+  ],
+  awards: {
+    wins: 1,
+    nominations: 0,
+    text: '1 win.'
+  },
+  lastupdated: '2015-08-18 01:03:15.313000000',
+  year: 1914,
+  imdb: {
+    rating: 7.3,
+    votes: 1837,
+    id: 4008
+  },
+  countries: [
+    'USA'
+  ],
+  type: 'movie',
+  tomatoes: {
+    viewer: {
+      rating: 3.7,
+      numReviews: 29
+    },
+    lastUpdated: 2015-08-10T19:20:03.000Z
+  }
+}
+{
+  _id: ObjectId('573a1390f29313caabcd516c'),
+  plot: 'Original advertising for the film describes it as a drama of primitive life on the shores of the North Pacific...',
+  genres: [
+    'Drama',
+    'History'
+  ],
+  runtime: 65,
+  cast: [
+    'Stanley Hunt',
+    'Sarah Constance Smith Hunt',
+    'Mrs. George Walkus',
+    "Paddy 'Malid"
+  ],
+  num_mflix_comments: 1,
+  poster: 'https://m.media-amazon.com/images/M/MV5BMjE3MjAyNzM5NV5BMl5BanBnXkFtZTgwMjA5OTg5NjE@._V1_SY1000_SX677_AL_.jpg',
+  title: 'In the Land of the Head Hunters',
+  lastupdated: '2015-09-16 12:11:37.770000000',
+  languages: [
+    'English'
+  ],
+  released: 1914-12-07T00:00:00.000Z,
+  directors: [
+    'Edward S. Curtis'
+  ],
+  writers: [
+    'Edward S. Curtis (story)'
+  ],
+  awards: {
+    wins: 1,
+    nominations: 0,
+    text: '1 win.'
+  },
+  year: 1914,
+  imdb: {
+    rating: 5.8,
+    votes: 223,
+    id: 4150
+  },
+  countries: [
+    'USA'
+  ],
+  type: 'movie',
+  tomatoes: {
+    viewer: {
+      rating: 2.7,
+      numReviews: 64,
+      meter: 18
+    },
+    dvd: 2000-08-15T00:00:00.000Z,
+    website: 'http://www.milestonefilms.com/',
+    production: 'World Film Corporation',
+    lastUpdated: 2015-08-18T19:21:12.000Z
+  }
+}
+{
+  _id: ObjectId('573a1390f29313caabcd5293'),
+  plot: "Young Pauline is left a lot of money when her wealthy uncle dies. However, her uncle's secretary has been named as her guardian until she marries, at which time she will officially take ...",
+  genres: [
+    'Action'
+  ],
+  runtime: 199,
+  cast: [
+    'Pearl White',
+    'Crane Wilbur',
+    'Paul Panzer',
+    'Edward Josè'
+  ],
+  num_mflix_comments: 0,
+  poster: 'https://m.media-amazon.com/images/M/MV5BMzgxODk1Mzk2Ml5BMl5BanBnXkFtZTgwMDg0NzkwMjE@._V1_SY1000_SX677_AL_.jpg',
+  title: 'The Perils of Pauline',
+  fullplot: `Young Pauline is left a lot of money when her wealthy uncle dies. However, her uncle's secretary has been named as her guardian until she marries, at which time she will officially take possession of her inheritance. Meanwhile, her "guardian" and his confederates constantly come up with schemes to get rid of Pauline so that he can get his hands on the money himself.`,
+  languages: [
+    'English'
+  ],
+  released: 1914-03-23T00:00:00.000Z,
+  directors: [
+    'Louis J. Gasnier',
+    'Donald MacKenzie'
+  ],
+  writers: [
+    'Charles W. Goddard (screenplay)',
+    'Basil Dickey (screenplay)',
+    'Charles W. Goddard (novel)',
+    'George B. Seitz',
+    'Bertram Millhauser'
+  ],
+  awards: {
+    wins: 1,
+    nominations: 0,
+    text: '1 win.'
+  },
+  lastupdated: '2015-09-12 00:01:18.647000000',
+  year: 1914,
+  imdb: {
+    rating: 7.6,
+    votes: 744,
+    id: 4465
+  },
+  countries: [
+    'USA'
+  ],
+  type: 'movie',
+  tomatoes: {
+    viewer: {
+      rating: 2.8,
+      numReviews: 9
+    },
+    production: 'Pathè Frères',
+    lastUpdated: 2015-09-11T17:46:19.000Z
+  }
+}
+{
+  _id: ObjectId('573a1390f29313caabcd56df'),
+  plot: 'An immigrant leaves his sweetheart in Italy to find a better life across the sea in the grimy slums of New York. They are eventually reunited and marry. But life in New York is hard and ...',
+  genres: [
+    'Drama'
+  ],
+  runtime: 78,
+  rated: 'PASSED',
+  cast: [
+    'George Beban',
+    'Clara Williams',
+    'J. Frank Burke',
+    'Leo Willis'
+  ],
+  title: 'The Italian',
+  fullplot: 'An immigrant leaves his sweetheart in Italy to find a better life across the sea in the grimy slums of New York. They are eventually reunited and marry. But life in New York is hard and tragedy tarnishes their dream of a better life in the new world.',
+  languages: [
+    'English'
+  ],
+  released: 1915-01-01T00:00:00.000Z,
+  directors: [
+    'Reginald Barker'
+  ],
+  writers: [
+    'Thomas H. Ince (story)',
+    'C. Gardner Sullivan (story)'
+  ],
+  awards: {
+    wins: 1,
+    nominations: 0,
+    text: '1 win.'
+  },
+  lastupdated: '2015-07-27 00:07:43.230000000',
+  year: 1915,
+  imdb: {
+    rating: 6.4,
+    votes: 175,
+    id: 5557
+  },
+  countries: [
+    'USA'
+  ],
+  type: 'movie',
+  tomatoes: {
+    viewer: {
+      rating: 4,
+      numReviews: 204,
+      meter: 60
+    },
+    dvd: 2008-08-26T00:00:00.000Z,
+    lastUpdated: 2015-07-24T19:30:02.000Z
+  },
+  num_mflix_comments: 0
+}
+{
+  _id: ObjectId('573a1390f29313caabcd587d'),
+  plot: 'At 10 years old, Owens becomes a ragged orphan when his sainted mother dies. The Conways, who are next door neighbors, take Owen in, but the constant drinking by Jim soon puts Owen on the ...',
+  genres: [
+    'Biography',
+    'Crime',
+    'Drama'
+  ],
+  runtime: 72,
+  rated: 'PASSED',
+  cast: [
+    'John McCann',
+    'James A. Marcus',
+    'Maggie Weston',
+    'Harry McCoy'
+  ],
+  num_mflix_comments: 1,
+  poster: 'https://m.media-amazon.com/images/M/MV5BNDkxZGU4NmMtODJlNy00YzA2LTg4ZGMtNGFlNzAyNzcxOTM1XkEyXkFqcGdeQXVyOTM3MjcyMjI@._V1_SY1000_SX677_AL_.jpg',
+  title: 'Regeneration',
+  fullplot: 'At 10 years old, Owens becomes a ragged orphan when his sainted mother dies. The Conways, who are next door neighbors, take Owen in, but the constant drinking by Jim soon puts Owen on the street. By 17, Owen learns that might is right. By 25, Owen is the leader of his own gang who spend most of their time gambling and drinking. But Marie comes into the gangster area of town and everything changes for Owen as he falls for Marie. But he cannot tell her so, so he comes to her settlement to find education and inspiration. But soon, his old way of life will rise to confront him again.',
+  languages: [
+    'English'
+  ],
+  released: 1915-09-13T00:00:00.000Z,
+  directors: [
+    'Raoul Walsh'
+  ],
+  writers: [
+    'Owen Frawley Kildare (book)',
+    'Raoul Walsh (adapted from the book: "My Mamie Rose")',
+    'Carl Harbaugh (adapted from the book: "My Mamie Rose")'
+  ],
+  awards: {
+    wins: 1,
+    nominations: 0,
+    text: '1 win.'
+  },
+  lastupdated: '2015-08-14 01:28:18.957000000',
+  year: 1915,
+  imdb: {
+    rating: 6.8,
+    votes: 626,
+    id: 5960
+  },
+  countries: [
+    'USA'
+  ],
+  type: 'movie',
+  tomatoes: {
+    viewer: {
+      rating: 3.4,
+      numReviews: 395,
+      meter: 70
+    },
+    dvd: 2001-11-27T00:00:00.000Z,
+    critic: {
+      rating: 9.2,
+      numReviews: 5,
+      meter: 100
+    },
+    lastUpdated: 2015-09-17T17:22:42.000Z,
+    rotten: 0,
+    production: 'Fox Film Corporation',
+    fresh: 5
+  }
+}
+{
+  _id: ObjectId('573a1390f29313caabcd5a93'),
+  plot: 'Christ takes on the form of a pacifist count to end a senseless war.',
+  genres: [
+    'Drama'
+  ],
+  runtime: 78,
+  cast: [
+    'Howard C. Hickman',
+    'Enid Markey',
+    'Lola May',
+    'Kate Bruce'
+  ],
+  num_mflix_comments: 0,
+  poster: 'https://m.media-amazon.com/images/M/MV5BMjAwNTIxMjE5N15BMl5BanBnXkFtZTgwODc1Mjg1MzE@._V1_SY1000_SX677_AL_.jpg',
+  title: 'Civilization',
+  fullplot: 'Allegorical film about peace. A king starts a war, many of the women are against it, people are pressed into service. A count has constructed a submarine and gets the order to sink an ocean liner, that is also carrying - supposedly - ammunition for the enemy. The count refuses to fire the torpedos, and sinks the submarine. He survives, but in a limbo between death and life where he meets Jesus, who takes him over to preach peace. Naturally the king arrests him and sentences him to death for treason, but then Jesus shows him the real face of war.',
+  countries: [
+    'USA'
+  ],
+  released: 1916-06-02T00:00:00.000Z,
+  directors: [
+    'Reginald Barker',
+    'Thomas H. Ince',
+    'Raymond B. West',
+    'Walter Edwards',
+    'David Hartford',
+    'Jay Hunt',
+    'J. Parker Read Jr.'
+  ],
+  writers: [
+    'C. Gardner Sullivan'
+  ],
+  awards: {
+    wins: 1,
+    nominations: 0,
+    text: '1 win.'
+  },
+  lastupdated: '2015-04-30 02:13:27.863000000',
+  year: 1916,
+  imdb: {
+    rating: 6.3,
+    votes: 162,
+    id: 6517
+  },
+  type: 'movie',
+  tomatoes: {
+    viewer: {
+      rating: 0,
+      numReviews: 7
+    },
+    lastUpdated: 2015-08-07T18:42:35.000Z
+  }
+}
+{
+  _id: ObjectId('573a1390f29313caabcd5ea4'),
+  plot: "A District Attorney's outspoken stand on abortion gets him in trouble with the local community.",
+  genres: [
+    'Drama'
+  ],
+  runtime: 62,
+  rated: 'APPROVED',
+  cast: [
+    'Tyrone Power Sr.',
+    'Helen Riaume',
+    'Marie Walcamp',
+    'Cora Drew'
+  ],
+  title: 'Where Are My Children?',
+  fullplot: 'While prosecuting a physician for the death of a client after an abortion, the district attorney discovers that his wife helped her society friends and the daughter of her maid obtain and pay for abortions from the physician (and was perhaps herself also a client.)',
+  languages: [
+    'English'
+  ],
+  released: 1916-05-01T00:00:00.000Z,
+  directors: [
+    'Phillips Smalley',
+    'Lois Weber'
+  ],
+  writers: [
+    'Lucy Payton (from the story by)',
+    'Franklin Hall (from the story by)',
+    'Lois Weber',
+    'Phillips Smalley'
+  ],
+  awards: {
+    wins: 1,
+    nominations: 0,
+    text: '1 win.'
+  },
+  lastupdated: '2015-09-07 00:51:32.560000000',
+  year: 1916,
+  imdb: {
+    rating: 5.9,
+    votes: 247,
+    id: 7558
+  },
+  countries: [
+    'USA'
+  ],
+  type: 'movie',
+  tomatoes: {
+    viewer: {
+      rating: 3.1,
+      numReviews: 34,
+      meter: 50
+    },
+    production: 'MCA/Universal Pictures',
+    lastUpdated: 2015-08-06T19:49:17.000Z
+  },
+  num_mflix_comments: 0
+}
+{
+  _id: ObjectId('573a1390f29313caabcd6223'),
+  plot: "Gwen's family is rich, but her parents ignore her and most of the servants push her around, so she is lonely and unhappy. Her father is concerned only with making money, and her mother ...",
+  genres: [
+    'Comedy',
+    'Drama',
+    'Family'
+  ],
+  runtime: 65,
+  cast: [
+    'Mary Pickford',
+    'Madlaine Traverse',
+    'Charles Wellesley',
+    'Gladys Fairbanks'
+  ],
+  title: 'The Poor Little Rich Girl',
+  fullplot: "Gwen's family is rich, but her parents ignore her and most of the servants push her around, so she is lonely and unhappy. Her father is concerned only with making money, and her mother cares only about her social position. But one day a servant's irresponsibility creates a crisis that causes everyone to rethink what is important to them.",
+  languages: [
+    'English'
+  ],
+  released: 1917-03-05T00:00:00.000Z,
+  directors: [
+    'Maurice Tourneur'
+  ],
+  writers: [
+    'Eleanor Gates (play)',
+    'Frances Marion (scenario)'
+  ],
+  awards: {
+    wins: 1,
+    nominations: 0,
+    text: '1 win.'
+  },
+  lastupdated: '2015-07-27 00:11:31.387000000',
+  year: 1917,
+  imdb: {
+    rating: 6.9,
+    votes: 884,
+    id: 8443
+  },
+  countries: [
+    'USA'
+  ],
+  type: 'movie',
+  tomatoes: {
+    viewer: {
+      rating: 3.9,
+      numReviews: 137,
+      meter: 77
+    },
+    production: 'Artcraft',
+    lastUpdated: 2015-08-21T18:00:25.000Z
+  },
+  num_mflix_comments: 0
+}
+{
+  _id: ObjectId('573a1390f29313caabcd6377'),
+  plot: `A rich young Easterner who has always wanted to live in "the Wild West" plans to move to a Western town. Unknown to him, the town's "wild" days are long gone, and it is an orderly, ...`,
+  genres: [
+    'Comedy',
+    'Western',
+    'Romance'
+  ],
+  runtime: 72,
+  cast: [
+    'Douglas Fairbanks',
+    'Eileen Percy',
+    'Calvert Carter',
+    'Charles Stevens'
+  ],
+  title: 'Wild and Woolly',
+  fullplot: `A rich young Easterner who has always wanted to live in "the Wild West" plans to move to a Western town. Unknown to him, the town's "wild" days are long gone, and it is an orderly, civilized place now. The townsmen, not wanting to lose a rich potential resident, contrive to make over the town to suit the young man's fantasy.`,
+  languages: [
+    'English'
+  ],
+  released: 1917-06-24T00:00:00.000Z,
+  directors: [
+    'John Emerson'
+  ],
+  writers: [
+    'Horace B. Carpenter (story)',
+    'John Emerson',
+    'Anita Loos'
+  ],
+  awards: {
+    wins: 1,
+    nominations: 0,
+    text: '1 win.'
+  },
+  lastupdated: '2015-06-05 00:40:35.137000000',
+  year: 1917,
+  imdb: {
+    rating: 6.9,
+    votes: 388,
+    id: 8775
+  },
+  countries: [
+    'USA'
+  ],
+  type: 'movie',
+  num_mflix_comments: 0
+}
+{
+  _id: ObjectId('573a1390f29313caabcd63d6'),
+  plot: 'Two peasant children, Mytyl and Tyltyl, are led by Berylune, a fairy, to search for the Blue Bird of Happiness. Berylune gives Tyltyl a cap with a diamond setting, and when Tyltyl turns the...',
+  genres: [
+    'Fantasy'
+  ],
+  runtime: 75,
+  cast: [
+    'Tula Belle',
+    'Robin Macdougall',
+    'Edwin E. Reed',
+    'Emma Lowry'
+  ],
+  num_mflix_comments: 0,
+  poster: 'https://m.media-amazon.com/images/M/MV5BMjNlMThmNzItMTZlMS00YzJkLTk1MzktYzIyMzllOGFmZmRlXkEyXkFqcGdeQXVyMzE0MjY5ODA@._V1_SY1000_SX677_AL_.jpg',
+  title: 'The Blue Bird',
+  fullplot: 'Two peasant children, Mytyl and Tyltyl, are led by Berylune, a fairy, to search for the Blue Bird of Happiness. Berylune gives Tyltyl a cap with a diamond setting, and when Tyltyl turns the diamond, the children become aware of and conversant with the souls of a Dog and Cat, as well as of Fire, Water, Bread, Light, and other presumably inanimate things. The troupe thus sets off to find the elusive Blue Bird of Happiness.',
+  languages: [
+    'English'
+  ],
+  released: 1918-03-31T00:00:00.000Z,
+  directors: [
+    'Maurice Tourneur'
+  ],
+  writers: [
+    'Maurice Maeterlinck (play)',
+    'Charles Maigne'
+  ],
+  awards: {
+    wins: 1,
+    nominations: 0,
+    text: '1 win.'
+  },
+  lastupdated: '2015-07-20 00:32:04.810000000',
+  year: 1918,
+  imdb: {
+    rating: 6.6,
+    votes: 446,
+    id: 8891
+  },
+  countries: [
+    'USA'
+  ],
+  type: 'movie',
+  tomatoes: {
+    viewer: {
+      rating: 3.6,
+      numReviews: 607,
+      meter: 60
+    },
+    dvd: 2005-09-06T00:00:00.000Z,
+    lastUpdated: 2015-08-21T18:10:22.000Z
+  }
+}
+{
+  _id: ObjectId('573a1391f29313caabcd68d0'),
+  plot: 'A penniless young man tries to save an heiress from kidnappers and help her secure her inheritance.',
+  genres: [
+    'Comedy',
+    'Short',
+    'Action'
+  ],
+  runtime: 22,
+  rated: 'TV-G',
+  cast: [
+    'Harold Lloyd',
+    'Mildred Davis',
+    "'Snub' Pollard",
+    'Peggy Cartwright'
+  ],
+  poster: 'https://m.media-amazon.com/images/M/MV5BNzE1OWRlNDgtMTllNi00NTZiLWIyNTktYTk0MDY1ZWUwYTc5XkEyXkFqcGdeQXVyMjUxODE0MDY@._V1_SY1000_SX677_AL_.jpg',
+  title: 'From Hand to Mouth',
+  fullplot: "As a penniless man worries about how he will manage to eat, he is joined by a young waif and her dog, who are in the same predicament. Meanwhile, across town a dishonest lawyer is working with a gang of criminals, trying to swindle an innocent young heiress out of her inheritance. As the heiress is on her way home from the lawyer's office, she notices the young man and the waif in the midst of their latest problem with the authorities, and she rescues them. Later on, the young man will have an unexpected opportunity to repay her for her kindness.",
+  languages: [
+    'English'
+  ],
+  released: 1919-12-28T00:00:00.000Z,
+  directors: [
+    'Alfred J. Goulding',
+    'Hal Roach'
+  ],
+  writers: [
+    'H.M. Walker (titles)'
+  ],
+  awards: {
+    wins: 0,
+    nominations: 1,
+    text: '1 nomination.'
+  },
+  lastupdated: '2015-04-17 00:16:14.220000000',
+  year: 1919,
+  imdb: {
+    rating: 7,
+    votes: 639,
+    id: 10146
+  },
+  countries: [
+    'USA'
+  ],
+  type: 'movie',
+  tomatoes: {
+    viewer: {
+      rating: 3.3,
+      numReviews: 71,
+      meter: 55
+    },
+    production: 'Pathè Exchange',
+    lastUpdated: 2015-08-21T18:45:11.000Z
+  },
+  num_mflix_comments: 0
+}
+{
+  _id: ObjectId('573a1391f29313caabcd6d40'),
+  plot: 'A tipsy doctor encounters his patient sleepwalking on a building ledge, high above the street.',
+  genres: [
+    'Comedy',
+    'Short'
+  ],
+  runtime: 26,
+  rated: 'PASSED',
+  cast: [
+    'Harold Lloyd',
+    'Roy Brooks',
+    'Mildred Davis',
+    'Wallace Howe'
+  ],
+  num_mflix_comments: 1,
+  poster: 'https://m.media-amazon.com/images/M/MV5BODliMjc3ODctYjhlOC00MDM5LTgzNmUtMjQ1MmViNDQ0NzlhXkEyXkFqcGdeQXVyNTM3MDMyMDQ@._V1_SY1000_SX677_AL_.jpg',
+  title: 'High and Dizzy',
+  fullplot: 'After a long wait, a young doctor finally has a patient come to his office. She is a young woman whose father has brought her to be treated for sleep-walking, but the father becomes annoyed with the doctor, and takes his daughter away. Soon afterward, the young doctor shares in a drinking binge with another doctor who has built a still in his office. After a series of misadventures, the two of them wind up in the same hotel where the daughter and her father are staying, leading to some hazardous predicaments.',
+  languages: [
+    'English'
+  ],
+  released: 1920-07-11T00:00:00.000Z,
+  directors: [
+    'Hal Roach'
+  ],
+  writers: [
+    'Frank Terry (story)',
+    'H.M. Walker (titles)'
+  ],
+  awards: {
+    wins: 0,
+    nominations: 1,
+    text: '1 nomination.'
+  },
+  lastupdated: '2015-08-11 00:35:33.717000000',
+  year: 1920,
+  imdb: {
+    rating: 7,
+    votes: 646,
+    id: 11293
+  },
+  countries: [
+    'USA'
+  ],
+  type: 'movie',
+  tomatoes: {
+    viewer: {
+      rating: 3.4,
+      numReviews: 30,
+      meter: 70
+    },
+    lastUpdated: 2015-06-27T19:17:10.000Z
+  }
+}
+{
+  _id: ObjectId('573a1391f29313caabcd6e2a'),
+  plot: "A newly wedded couple attempt to build a house with a prefabricated kit, unaware that a rival sabotaged the kit's component numbering.",
+  genres: [
+    'Short',
+    'Comedy'
+  ],
+  runtime: 25,
+  cast: [
+    'Buster Keaton',
+    'Sybil Seely'
+  ],
+  num_mflix_comments: 0,
+  title: 'One Week',
+  fullplot: "Buster and Sybil exit a chapel as newlyweds. Among the gifts is a portable house you easily put together in one week. It doesn't help that Buster's rival for Sybil switches the numbers on the crates containing the house parts.",
+  languages: [
+    'English'
+  ],
+  released: 1920-09-01T00:00:00.000Z,
+  directors: [
+    'Edward F. Cline',
+    'Buster Keaton'
+  ],
+  rated: 'TV-G',
+  awards: {
+    wins: 1,
+    nominations: 0,
+    text: '1 win.'
+  },
+  lastupdated: '2015-05-07 01:07:01.633000000',
+  year: 1920,
+  imdb: {
+    rating: 8.3,
+    votes: 3942,
+    id: 11541
+  },
+  countries: [
+    'USA'
+  ],
+  type: 'movie',
+  tomatoes: {
+    viewer: {
+      rating: 4.3,
+      numReviews: 752,
+      meter: 91
+    },
+    lastUpdated: 2015-09-13T18:22:19.000Z
+  }
+}
+{
+  _id: ObjectId('573a1391f29313caabcd6ea2'),
+  plot: 'The simple-minded son of a rich financier must find his own way in the world.',
+  genres: [
+    'Comedy'
+  ],
+  runtime: 77,
+  cast: [
+    'Edward Jobson',
+    'Beulah Booker',
+    'Edward Connelly',
+    'Edward Alexander'
+  ],
+  num_mflix_comments: 0,
+  poster: 'https://m.media-amazon.com/images/M/MV5BZDNiODA3NzQtNTBmZS00NTM3LWJlOGMtMDg2NzFiNDU2M2M3XkEyXkFqcGdeQXVyMjUxODE0MDY@._V1_SY1000_SX677_AL_.jpg',
+  title: 'The Saphead',
+  fullplot: "Nick Van Alstyne owns the Henrietta silver mine and is very rich. His son Bertie is naive and spoiled. His daughter Rose is married to shady investor Mark. Mark wrecks Bertie's wedding plans by making him take the blame for Mark's illegitimate daughter. Mark also nearly ruins the family business by selling off Henrietta stock at too low a price. Bertie, of all people, must come to the rescue on the trading floor.",
+  countries: [
+    'USA'
+  ],
+  released: 1920-09-01T00:00:00.000Z,
+  directors: [
+    'Herbert Blachè',
+    'Winchell Smith'
+  ],
+  writers: [
+    'Bronson Howard (original play "The Henrietta")',
+    'Victor Mapes (play)',
+    'June Mathis (scenario)',
+    'Winchell Smith (play)'
+  ],
+  awards: {
+    wins: 0,
+    nominations: 1,
+    text: '1 nomination.'
+  },
+  lastupdated: '2015-06-20 00:38:08.303000000',
+  year: 1920,
+  imdb: {
+    rating: 6.2,
+    votes: 1020,
+    id: 11652
+  },
+  type: 'movie',
+  tomatoes: {
+    viewer: {
+      rating: 3.3,
+      numReviews: 435,
+      meter: 49
+    },
+    dvd: 2000-01-11T00:00:00.000Z,
+    lastUpdated: 2015-06-23T19:23:34.000Z
+  }
+}
+{
+  _id: ObjectId('573a1391f29313caabcd6f98'),
+  plot: 'A romantic rivalry among members of a secret society becomes even tenser when one of the men is assigned to carry out an assassination.',
+  genres: [
+    'Crime',
+    'Drama',
+    'Mystery'
+  ],
+  runtime: 75,
+  rated: 'PASSED',
+  cast: [
+    'Lon Chaney',
+    'Leatrice Joy',
+    'John Bowers',
+    'Hardee Kirkland'
+  ],
+  num_mflix_comments: 1,
+  poster: 'https://m.media-amazon.com/images/M/MV5BMTkwOTUyNDk1N15BMl5BanBnXkFtZTYwODI3MzI3._V1_SY1000_SX677_AL_.jpg',
+  title: 'The Ace of Hearts',
+  fullplot: "A secret society holds a meeting to determine what to do about a powerful and dangerous man whom they have been studying closely for the past three months. They all agree that he deserves to die. Two of the members, Farallone and Forrest, are both in love with Lilith, the group's only female member. But Lilith accepts neither of them, preferring to devote herself to the group's cause. When the group meets again and deals cards to all the members, Forrest draws the ace of hearts, meaning that he will be the one to carry out the assassination. Lilith then suddenly agrees to marry him, in order to give him courage. But after their first night together, both of them begin to feel differently about what they have planned.",
+  countries: [
+    'USA'
+  ],
+  released: 1924-04-04T00:00:00.000Z,
+  directors: [
+    'Wallace Worsley'
+  ],
+  writers: [
+    'Gouverneur Morris (by)',
+    'Ruth Wightman (scenario)'
+  ],
+  awards: {
+    wins: 0,
+    nominations: 2,
+    text: '2 nominations.'
+  },
+  lastupdated: '2015-07-20 00:01:29.560000000',
+  year: 1921,
+  imdb: {
+    rating: 7,
+    votes: 798,
+    id: 11904
+  },
+  type: 'movie',
+  tomatoes: {
+    viewer: {
+      rating: 3.5,
+      numReviews: 377,
+      meter: 68
+    },
+    lastUpdated: 2015-04-28T19:29:23.000Z
+  }
+}
+{
+  _id: ObjectId('573a1391f29313caabcd70b4'),
+  plot: 'An extended family split up in France and Germany find themselves on opposing sides of the battlefield during World War I.',
+  genres: [
+    'Drama',
+    'Romance',
+    'War'
+  ],
+  runtime: 150,
+  rated: 'PASSED',
+  cast: [
+    'Pomeroy Cannon',
+    'Josef Swickard',
+    'Bridgetta Clark',
+    'Rudolph Valentino'
+  ],
+  num_mflix_comments: 1,
+  poster: 'https://m.media-amazon.com/images/M/MV5BOTU1ODQyYTctODhkNy00YWRmLWE2YzYtMTQ5ZjA3OTNiN2QyXkEyXkFqcGdeQXVyMzE0MjY5ODA@._V1_SY1000_SX677_AL_.jpg',
+  title: 'The Four Horsemen of the Apocalypse',
+  fullplot: 'Julio Madariaga is the Argentine patriarch of a wealthy family. He has two daughters, the elder wed to a Frenchman and the other to a German. He prefers the Frenchman and his family, especially his grandson Julio, causing jealousy from the German and his three sons. When Madariaga dies, the family splits up, each son-in-law returning to his own country. The Frenchman and his own move to Paris, where Julio becomes an artist and has an affair with an unhappily married woman, the lovely Marguerite Laurier. Her husband finds out, but before he can finalize a divorce, World War One rears its head and both sides of the family will endure great suffering in the conflict, especially since they must fight one another on the battlefield.',
+  countries: [
+    'USA'
+  ],
+  released: 1923-03-31T00:00:00.000Z,
+  directors: [
+    'Rex Ingram'
+  ],
+  writers: [
+    'Vicente Blasco Ibèèez (novel)',
+    'June Mathis (written for the screen by)'
+  ],
+  awards: {
+    wins: 1,
+    nominations: 0,
+    text: '1 win.'
+  },
+  lastupdated: '2015-08-24 00:59:30.430000000',
+  year: 1921,
+  imdb: {
+    rating: 7.9,
+    votes: 2475,
+    id: 12190
+  },
+  type: 'movie',
+  tomatoes: {
+    viewer: {
+      rating: 3.9,
+      numReviews: 507,
+      meter: 76
+    },
+    production: 'Metro Pictures Corporation',
+    lastUpdated: 2015-07-28T18:34:16.000Z
+  }
+}
+Type "it" for more
+db.movies.countDocuments()
+21349
+db.movies.findOne()
+{
+  _id: ObjectId('573a1390f29313caabcd42e8'),
+  plot: 'A group of bandits stage a brazen train hold-up, only to find a determined posse hot on their heels.',
+  genres: [
+    'Short',
+    'Western'
+  ],
+  runtime: 11,
+  cast: [
+    'A.C. Abadie',
+    "Gilbert M. 'Broncho Billy' Anderson",
+    'George Barnes',
+    'Justus D. Barnes'
+  ],
+  poster: 'https://m.media-amazon.com/images/M/MV5BMTU3NjE5NzYtYTYyNS00MDVmLWIwYjgtMmYwYWIxZDYyNzU2XkEyXkFqcGdeQXVyNzQzNzQxNzI@._V1_SY1000_SX677_AL_.jpg',
+  title: 'The Great Train Robbery',
+  fullplot: "Among the earliest existing films in American cinema - notable as the first film that presented a narrative story to tell - it depicts a group of cowboy outlaws who hold up a train and rob the passengers. They are then pursued by a Sheriff's posse. Several scenes have color included - all hand tinted.",
+  languages: [
+    'English'
+  ],
+  released: 1903-12-01T00:00:00.000Z,
+  directors: [
+    'Edwin S. Porter'
+  ],
+  rated: 'TV-G',
+  awards: {
+    wins: 1,
+    nominations: 0,
+    text: '1 win.'
+  },
+  lastupdated: '2015-08-13 00:27:59.177000000',
+  year: 1903,
+  imdb: {
+    rating: 7.4,
+    votes: 9847,
+    id: 439
+  },
+  countries: [
+    'USA'
+  ],
+  type: 'movie',
+  tomatoes: {
+    viewer: {
+      rating: 3.7,
+      numReviews: 2559,
+      meter: 75
+    },
+    fresh: 6,
+    critic: {
+      rating: 7.6,
+      numReviews: 6,
+      meter: 100
+    },
+    rotten: 0,
+    lastUpdated: 2015-08-08T19:16:10.000Z
+  },
+  num_mflix_comments: 0
+}
+db.movies.find({ year: 1998 }).count()
+513
+db.movies.find({year: {$eq: 1998 }}).count()
+513
+db.movies.find({year: {$lt: 1998 }}).count()
+7717
+db.movies.find({year: {$lte: 1998 }}).count()
+8230
+db.movies.find({year: {$gt: 1998 }}).count()
+13084
+db.movies.find({year: {$gte: 1998 }}).count()
+13597
+db.movies.find({year: {$ne: 1998 }}).count()
+20836
+db.movies.findOne({ type: { $ne: 'movie' } })
+{
+  _id: ObjectId('573a1395f29313caabce2f03'),
+  plot: 'The extended Forsyte family live a more than pleasant upper middle class life in Victorian and later Edwardian England. The two central characters are Soames Forsyte and his cousin Jolyon ...',
+  genres: [
+    'Drama'
+  ],
+  runtime: 50,
+  cast: [
+    'Eric Porter',
+    'Margaret Tyzack',
+    'Nyree Dawn Porter',
+    'June Barry'
+  ],
+  num_mflix_comments: 0,
+  poster: 'https://m.media-amazon.com/images/M/MV5BMTQzNjgzODI2MF5BMl5BanBnXkFtZTcwNTg0MTAzMQ@@._V1_SY1000_SX677_AL_.jpg',
+  title: 'The Forsyte Saga',
+  fullplot: "The extended Forsyte family live a more than pleasant upper middle class life in Victorian and later Edwardian England. The two central characters are Soames Forsyte and his cousin Jolyon Forsyte. Soames is a solicitor, all proper and straight-laced. His love for the beautiful Irene is his only weakness as is his beautiful daughter Fleur. Young Jolyon is the opposite, a free-thinking artist who abandons his wife to live with his children's nanny. Their lives and their children's lives will intersect over 30 years bringing happiness to some and tragedy to others.",
+  languages: [
+    'English'
+  ],
+  released: 1969-10-05T00:00:00.000Z,
+  awards: {
+    wins: 4,
+    nominations: 2,
+    text: 'Won 1 Primetime Emmy. Another 3 wins & 2 nominations.'
+  },
+  lastupdated: '2015-09-05 00:46:25.133000000',
+  year: 1967,
+  imdb: {
+    rating: 8.3,
+    votes: 547,
+    id: 61253
+  },
+  countries: [
+    'UK'
+  ],
+  type: 'series',
+  tomatoes: {
+    viewer: {
+      rating: 2.6,
+      numReviews: 128,
+      meter: 32
+    },
+    dvd: 2009-11-17T00:00:00.000Z,
+    production: 'Romar Entertainment',
+    lastUpdated: 2015-08-21T18:17:47.000Z
+  }
+}
+db.movies.find({ type: { $eq: 'series' }, year: 2004 })
+{
+  _id: ObjectId('573a13adf29313caabd2b426'),
+  plot: "Another adaption of Mary Shelley's novel about a scientist who brings life to a creature fashioned from corpses and various body parts.",
+  genres: [
+    'Drama',
+    'Horror',
+    'Sci-Fi'
+  ],
+  runtime: 204,
+  cast: [
+    'William Hurt'
+  ],
+  num_mflix_comments: 0,
+  poster: 'https://m.media-amazon.com/images/M/MV5BMTYxMDIxODQxMl5BMl5BanBnXkFtZTcwNDU2MDcyMQ@@._V1_SY1000_SX677_AL_.jpg',
+  title: 'Frankenstein',
+  fullplot: "Another adaption of Mary Shelley's novel about a scientist who brings life to a creature fashioned from corpses and various body parts.",
+  languages: [
+    'English'
+  ],
+  released: 2004-10-05T00:00:00.000Z,
+  awards: {
+    wins: 0,
+    nominations: 3,
+    text: 'Won 1 Primetime Emmy. Another 2 nominations.'
+  },
+  lastupdated: '2015-08-10 00:30:39.330000000',
+  year: 2004,
+  imdb: {
+    rating: 6.4,
+    votes: 930,
+    id: 368730
+  },
+  countries: [
+    'Slovakia',
+    'USA',
+    'Germany'
+  ],
+  type: 'series'
+}
+{
+  _id: ObjectId('573a13aff29313caabd2f884'),
+  plot: 'When college professor J.T. Neumeyer discovers a police file that outlines the details of his murder - which is to take place five days in the future - he wastes no time trying to save his own life.',
+  genres: [
+    'Action',
+    'Drama',
+    'Thriller'
+  ],
+  runtime: 210,
+  cast: [
+    'Timothy Hutton'
+  ],
+  num_mflix_comments: 1,
+  poster: 'https://m.media-amazon.com/images/M/MV5BMjA1NTY0MDgwMF5BMl5BanBnXkFtZTcwODQ0NjYyMQ@@._V1_SY1000_SX677_AL_.jpg',
+  title: '5ive Days to Midnight',
+  fullplot: 'While visiting the graveyard of his beloved wife with his daughter Jesse, the physics professor John T. Neumeyer finds a case with a police dossier relating his death in five days. He initially believes it is a sick prank from the brilliant but deranged physics student Carl Axelrod, but when a series of events related in the documents occur, he realizes that the file has been sent from the future. With the support of Detective Irwin Sikorski, whose name is indicated in the file as in charge of the investigation of his death, and suspecting of everybody including his girlfriend Claudia Whitney that has a blurred hidden past, J.T. tries to change the future and his fate. But Carl believes that any modification in the time-line will jeopardize mankind and the future of the planet.',
+  languages: [
+    'English'
+  ],
+  released: 2004-06-07T00:00:00.000Z,
+  awards: {
+    wins: 0,
+    nominations: 1,
+    text: '1 nomination.'
+  },
+  lastupdated: '2015-08-24 00:23:23.807000000',
+  year: 2004,
+  imdb: {
+    rating: 6.7,
+    votes: 2192,
+    id: 386907
+  },
+  countries: [
+    'USA',
+    'Canada'
+  ],
+  type: 'series'
+}
+{
+  _id: ObjectId('573a13aff29313caabd2ff38'),
+  plot: 'Academy Award-winning documentary filmmaker, Jean-Xavier de Lestrade, presents a gripping courtroom thriller, offering a rare and revealing inside look at a high-profile murder trial. In ...',
+  genres: [
+    'Documentary',
+    'Crime'
+  ],
+  runtime: 360,
+  cast: [
+    'Ron Guerette',
+    'David Saacks'
+  ],
+  num_mflix_comments: 1,
+  poster: 'https://m.media-amazon.com/images/M/MV5BNTU4NTE3MDY4NF5BMl5BanBnXkFtZTgwODk4NjY1NTM@._V1_SY1000_SX677_AL_.jpg',
+  title: 'Death on the Staircase',
+  fullplot: `Academy Award-winning documentary filmmaker, Jean-Xavier de Lestrade, presents a gripping courtroom thriller, offering a rare and revealing inside look at a high-profile murder trial. In 2001, author Michael Peterson was arraigned for the murder of his wife Kathleen, whose body was discovered lying in a pool of blood on the stairway of their home. Granted unusual access to Peterson's lawyers, home and immediate family, de Lestrade's cameras capture the defense team as it considers its strategic options. "The staircase" is an engrossing look at contemporary American justice that features more twists than a legal bestseller.`,
+  languages: [
+    'English'
+  ],
+  released: 2004-06-01T00:00:00.000Z,
+  awards: {
+    wins: 2,
+    nominations: 0,
+    text: '2 wins.'
+  },
+  lastupdated: '2015-08-01 00:03:18.110000000',
+  year: 2004,
+  imdb: {
+    rating: 8.5,
+    votes: 1669,
+    id: 388644
+  },
+  countries: [
+    'France'
+  ],
+  type: 'series'
+}
+{
+  _id: ObjectId('573a13aff29313caabd2fbbd'),
+  plot: 'When a full-scale war is engaged by the evil Scarran Empire, the Peacekeeper Alliance has but one hope: reassemble human astronaut John Crichton, once sucked into the Peacekeeper galaxy ...',
+  genres: [
+    'Action',
+    'Adventure',
+    'Drama'
+  ],
+  runtime: 182,
+  cast: [
+    'Ben Browder',
+    'Claudia Black',
+    'Anthony Simcoe',
+    'Gigi Edgley'
+  ],
+  num_mflix_comments: 0,
+  poster: 'https://m.media-amazon.com/images/M/MV5BMTkyODgzOTg2NV5BMl5BanBnXkFtZTcwMTEwNTEzMQ@@._V1_SY1000_SX677_AL_.jpg',
+  title: 'Farscape: The Peacekeeper Wars',
+  fullplot: "When a full-scale war is engaged by the evil Scarran Empire, the Peacekeeper Alliance has but one hope: reassemble human astronaut John Crichton, once sucked into the Peacekeeper galaxy through a wormhole. Crichton's task: Get the entire Peacekeeper race to safety before the last war of an era brings and end to the universe.",
+  languages: [
+    'English'
+  ],
+  released: 2004-10-17T00:00:00.000Z,
+  rated: 'TV-PG',
+  awards: {
+    wins: 4,
+    nominations: 0,
+    text: 'Nominated for 1 Primetime Emmy. Another 3 wins.'
+  },
+  lastupdated: '2015-08-12 00:43:01.063000000',
+  year: 2004,
+  imdb: {
+    rating: 8.2,
+    votes: 11273,
+    id: 387736
+  },
+  countries: [
+    'USA',
+    'Australia'
+  ],
+  type: 'series'
+}
+{
+  _id: ObjectId('573a13b0f29313caabd3294a'),
+  plot: 'Period: Second World War. A quiet channel island community is thrown into turmoil by the invasion forces of Nazi Germany.',
+  genres: [
+    'Drama',
+    'War'
+  ],
+  runtime: 540,
+  cast: [
+    'Saskia Reeves',
+    'Owen Teale',
+    'Julia Ford',
+    'Clare Holman'
+  ],
+  num_mflix_comments: 1,
+  poster: 'https://m.media-amazon.com/images/M/MV5BYzg4NDBhODQtYmJjZS00NzcxLThmYTktNDZlNWE5NzQzZTlkXkEyXkFqcGdeQXVyNjUwMTQ4NjE@._V1_SY1000_SX677_AL_.jpg',
+  title: 'Island at War',
+  fullplot: 'Set during the occupation of the Channel Islands during World War II. The story shows how Island life changed overnight after a German invasion. Islanders were restricted to walking and cycling, town names were changed to German names, clocks were set to continental time, and no society could meet without the permission of German High Command. The focus is on three families, the Dorrs, the Jonases and the Mahys, as they struggle on with day to day life under the restrictive new system.',
+  languages: [
+    'English'
+  ],
+  released: 2005-01-23T00:00:00.000Z,
+  awards: {
+    wins: 1,
+    nominations: 0,
+    text: '1 win.'
+  },
+  lastupdated: '2015-09-06 00:44:07.527000000',
+  year: 2004,
+  imdb: {
+    rating: 7.6,
+    votes: 816,
+    id: 401019
+  },
+  countries: [
+    'UK'
+  ],
+  type: 'series',
+  tomatoes: {
+    viewer: {
+      rating: 3.5,
+      numReviews: 52,
+      meter: 100
+    },
+    lastUpdated: 2015-08-25T18:48:55.000Z
+  }
+}
+{
+  _id: ObjectId('573a13b0f29313caabd340dd'),
+  plot: 'A reckless youth is destined to become the greatest sorcerer that the mystical land of Earthsea has ever known. When the young wizard Ged discovers that he possesses infinite magical powers...',
+  genres: [
+    'Fantasy',
+    'Drama',
+    'Adventure'
+  ],
+  runtime: 90,
+  cast: [
+    'Shawn Ashmore'
+  ],
+  num_mflix_comments: 0,
+  poster: 'https://m.media-amazon.com/images/M/MV5BMTk0MjY2NTEyMV5BMl5BanBnXkFtZTcwMDMzMzcyMQ@@._V1_SY1000_SX677_AL_.jpg',
+  title: 'Earthsea',
+  fullplot: "A reckless youth is destined to become the greatest sorcerer that the mystical land of Earthsea has ever known. When the young wizard Ged discovers that he possesses infinite magical powers, he seeks to master the ancient arts. As he journeys to manhood, he will combat dragons, fall in love, cross death's threshold, and ultimately wield the power to reunite a kingdom.",
+  languages: [
+    'English'
+  ],
+  released: 2004-12-13T00:00:00.000Z,
+  awards: {
+    wins: 8,
+    nominations: 7,
+    text: 'Nominated for 1 Primetime Emmy. Another 7 wins & 7 nominations.'
+  },
+  lastupdated: '2015-08-29 00:50:26.813000000',
+  year: 2004,
+  imdb: {
+    rating: 5.7,
+    votes: 5064,
+    id: 407384
+  },
+  countries: [
+    'USA',
+    'Canada'
+  ],
+  type: 'series',
+  tomatoes: {
+    viewer: {
+      rating: 3.2,
+      numReviews: 8088,
+      meter: 52
+    },
+    dvd: 2005-03-08T00:00:00.000Z,
+    lastUpdated: 2015-09-01T18:54:03.000Z
+  }
+}
+{
+  _id: ObjectId('573a13b1f29313caabd36698'),
+  plot: "North and South is a four part adaptation of Elizabeth Gaskell's love story of Margaret Hale, a middle class southerner who is forced to move to the northern town of Milton.",
+  genres: [
+    'Drama',
+    'Romance'
+  ],
+  runtime: 235,
+  cast: [
+    'Daniela Denby-Ashe',
+    'Richard Armitage',
+    'Tim Pigott-Smith',
+    'Sinèad Cusack'
+  ],
+  poster: 'https://m.media-amazon.com/images/M/MV5BNjMwZTdjMmQtMzMxOS00Nzc3LWE3NDgtYWM2OTYyYzQxMTA0XkEyXkFqcGdeQXVyMTgxOTIzNzk@._V1_SY1000_SX677_AL_.jpg',
+  title: 'North & South',
+  fullplot: `This series operates on many levels. At the heart of the series is the tempestuous relationship between Margaret Hale, a young woman from a southern middle class family who finds herself uprooted to the north, and John Thornton, a formerly poverty-stricken cotton mill owner terrified of losing the viability of his business. Around them are class struggles between the workers and mill owners and ideological struggles between the industrial North and the agrarian South. After moving North, Margaret's father befriends his student Mr. Thornton. Margaret has already formed her opinion of Mr. Thornton independently after seeing him treat his workers harshly. As the series progresses, she and we the audience begin to learn that his strict treatment is due to an overarching concern for his mill and by extension, his employees. John Thornton, on the other hand, is attracted to Margaret's independence and position in society as a well-educated Southerner. As in "Pride and Prejudice" the marriage proposal comes in the middle of the series and is rejected by Margaret. Contrary to "Pride and Prejudice" it is mirrored in social upheaval as the entire town is brought to its knees by a strike. The latter half of the series is an unraveling of the former misunderstandings ending in a romantic reconciliation which is again mirrored by reconciliation between workers and mill owners.`,
+  languages: [
+    'English'
+  ],
+  released: 2005-07-02T00:00:00.000Z,
+  awards: {
+    wins: 0,
+    nominations: 1,
+    text: '1 nomination.'
+  },
+  lastupdated: '2015-08-13 00:01:17.833000000',
+  year: 2004,
+  imdb: {
+    rating: 9,
+    votes: 16583,
+    id: 417349
+  },
+  countries: [
+    'UK'
+  ],
+  type: 'series',
+  tomatoes: {
+    website: 'http://www.12andholdingmovie.com/',
+    viewer: {
+      rating: 3.3,
+      numReviews: 19660,
+      meter: 79
+    },
+    dvd: 2006-10-10T00:00:00.000Z,
+    critic: {
+      rating: 6.7,
+      numReviews: 77,
+      meter: 73
+    },
+    lastUpdated: 2015-09-12T17:14:07.000Z,
+    consensus: 'This shocking pre-teen drama manages, through realistic performances and a sense of empathy, to avoid exploitation and instead deliver something honest and haunting.',
+    rotten: 21,
+    production: 'IFC Films',
+    fresh: 56
+  },
+  num_mflix_comments: 0
+}
+{
+  _id: ObjectId('573a13b2f29313caabd39831'),
+  plot: 'A series of three documentaries about the use of fear for political gain.',
+  genres: [
+    'Documentary',
+    'History'
+  ],
+  runtime: 157,
+  metacritic: 78,
+  cast: [
+    'Ayman Al-Zawahiri',
+    'Osama bin Laden',
+    'Gilles Kepel',
+    'Sayyid Qutb'
+  ],
+  num_mflix_comments: 0,
+  poster: 'https://m.media-amazon.com/images/M/MV5BMTY4MDc4MjEzNl5BMl5BanBnXkFtZTcwNTcxMjE2MQ@@._V1_SY1000_SX677_AL_.jpg',
+  title: 'The Power of Nightmares: The Rise of the Politics of Fear',
+  fullplot: 'A series of three documentaries about the use of fear for political gain.',
+  languages: [
+    'English'
+  ],
+  released: 2004-10-20T00:00:00.000Z,
+  awards: {
+    wins: 4,
+    nominations: 0,
+    text: '4 wins.'
+  },
+  lastupdated: '2015-09-15 03:47:20.953000000',
+  year: 2004,
+  imdb: {
+    rating: 8.9,
+    votes: 2954,
+    id: 430484
+  },
+  countries: [
+    'UK'
+  ],
+  type: 'series',
+  tomatoes: {
+    viewer: {
+      rating: 4.5,
+      numReviews: 1210,
+      meter: 99
+    },
+    dvd: 2008-08-05T00:00:00.000Z,
+    critic: {
+      rating: 8.1,
+      numReviews: 7,
+      meter: 86
+    },
+    lastUpdated: 2015-08-31T18:37:46.000Z,
+    rotten: 1,
+    production: 'BBC',
+    fresh: 6
+  }
+}
+db.movies.find({ type: { $eq: 'series' }, year: 2004 }).count()
+8
+db.movies.find({ cast: { $in: ['Tom Cruise'] } })
+{
+  _id: ObjectId('573a1397f29313caabce8ce7'),
+  plot: 'A Chicago teenager is looking for fun at home while his parents are away, but the situation quickly gets out of hand.',
+  genres: [
+    'Comedy',
+    'Crime',
+    'Drama'
+  ],
+  runtime: 99,
+  metacritic: 75,
+  rated: 'R',
+  cast: [
+    'Tom Cruise',
+    'Rebecca De Mornay',
+    'Joe Pantoliano',
+    'Richard Masur'
+  ],
+  num_mflix_comments: 1,
+  poster: 'https://m.media-amazon.com/images/M/MV5BMjVhNDE4YmQtNzBlMy00YTdkLTkwNTEtZGRmMDVkMmYwYjA5XkEyXkFqcGdeQXVyNDk3NzU2MTQ@._V1_SY1000_SX677_AL_.jpg',
+  title: 'Risky Business',
+  fullplot: "A suburban Chicago teenager's parents leave on vacation, and he cuts loose. An unauthorised trip in his father's Porsche means a sudden need for lots of money, which he raises in a creative way.",
+  languages: [
+    'English',
+    'German'
+  ],
+  released: 1983-08-05T00:00:00.000Z,
+  directors: [
+    'Paul Brickman'
+  ],
+  writers: [
+    'Paul Brickman'
+  ],
+  awards: {
+    wins: 0,
+    nominations: 3,
+    text: 'Nominated for 1 Golden Globe. Another 2 nominations.'
+  },
+  lastupdated: '2015-09-03 00:45:20.133000000',
+  year: 1983,
+  imdb: {
+    rating: 6.8,
+    votes: 55571,
+    id: 86200
+  },
+  countries: [
+    'USA'
+  ],
+  type: 'movie'
+}
+{
+  _id: ObjectId('573a1398f29313caabce9932'),
+  plot: 'A young man must stop the Lord of Darkness from both destroying daylight and marrying the woman he loves.',
+  genres: [
+    'Adventure',
+    'Fantasy',
+    'Romance'
+  ],
+  runtime: 89,
+  rated: 'PG',
+  cast: [
+    'Tom Cruise',
+    'Mia Sara',
+    'Tim Curry',
+    'David Bennent'
+  ],
+  num_mflix_comments: 0,
+  poster: 'https://m.media-amazon.com/images/M/MV5BYTAxZmQ4YzktNTI3Yi00MjgzLTg0YzMtODdmMWVmODUzNjJmL2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyNjc1NTYyMjg@._V1_SY1000_SX677_AL_.jpg',
+  title: 'Legend',
+  fullplot: 'A demon who seeks to create eternal night by destroying the last of the unicorns and marrying a fairy princess is opposed by the forest boy Jack and his elven allies in this magical fantasy. Two different versions of this picture feature soundtracks by either Tangerine Dream or Jerry Goldsmith.',
+  languages: [
+    'English',
+    'Italian'
+  ],
+  released: 1986-04-18T00:00:00.000Z,
+  directors: [
+    'Ridley Scott'
+  ],
+  writers: [
+    'William Hjortsberg'
+  ],
+  awards: {
+    wins: 2,
+    nominations: 10,
+    text: 'Nominated for 1 Oscar. Another 1 win & 10 nominations.'
+  },
+  lastupdated: '2015-08-25 00:01:46.400000000',
+  year: 1985,
+  imdb: {
+    rating: 6.5,
+    votes: 41782,
+    id: 89469
+  },
+  countries: [
+    'USA',
+    'UK'
+  ],
+  type: 'movie'
+}
+{
+  _id: ObjectId('573a1398f29313caabce9e7a'),
+  plot: 'Fast Eddie Felson teaches a cocky but immensely talented protègè the ropes of pool hustling, which in turn inspires him to make an unlikely comeback.',
+  genres: [
+    'Drama',
+    'Sport'
+  ],
+  runtime: 119,
+  rated: 'R',
+  cast: [
+    'Paul Newman',
+    'Tom Cruise',
+    'Mary Elizabeth Mastrantonio',
+    'Helen Shaver'
+  ],
+  num_mflix_comments: 1,
+  poster: 'https://m.media-amazon.com/images/M/MV5BMGUxNDNkZGQtMWEyOS00MzI0LWFmMTUtMmEyNzk1YzBiYzljXkEyXkFqcGdeQXVyNjc1NTYyMjg@._V1_SY1000_SX677_AL_.jpg',
+  title: 'The Color of Money',
+  fullplot: "Pool hustler Fast Eddie Felson finds the young, promising pool player Vincent in a local bar and he sees in him a younger version of himself. To try and make it as in the old days, Eddie offers to teach Vincent how to be a hustler. After some hesitations Vincent accepts and Eddie takes him and Vincent's girlfriend Carmen on a tour through the country to work the pool halls. However, Vincent's tendency to show off his talent and by doing so warning off the players and losing money, soon leads to a confrontation with Eddie.",
+  languages: [
+    'English',
+    'Spanish'
+  ],
+  released: 1986-10-17T00:00:00.000Z,
+  directors: [
+    'Martin Scorsese'
+  ],
+  writers: [
+    'Walter Tevis (novel)',
+    'Richard Price (screenplay)'
+  ],
+  awards: {
+    wins: 5,
+    nominations: 6,
+    text: 'Won 1 Oscar. Another 4 wins & 6 nominations.'
+  },
+  lastupdated: '2015-08-20 00:57:45.173000000',
+  year: 1986,
+  imdb: {
+    rating: 7,
+    votes: 53699,
+    id: 90863
+  },
+  countries: [
+    'USA'
+  ],
+  type: 'movie'
+}
+{
+  _id: ObjectId('573a1398f29313caabcea315'),
+  plot: "As students at the United States Navy's elite fighter weapons school compete to be best in the class, one daring young pilot learns a few things from a civilian instructor that are not taught in the classroom.",
+  genres: [
+    'Action',
+    'Drama',
+    'Romance'
+  ],
+  runtime: 110,
+  rated: 'PG',
+  cast: [
+    'Tom Cruise',
+    'Kelly McGillis',
+    'Val Kilmer',
+    'Anthony Edwards'
+  ],
+  num_mflix_comments: 1,
+  poster: 'https://m.media-amazon.com/images/M/MV5BZjQxYTA3ODItNzgxMy00N2Y2LWJlZGMtMTRlM2JkZjI1ZDhhXkEyXkFqcGdeQXVyNDk3NzU2MTQ@._V1_SY1000_SX677_AL_.jpg',
+  title: 'Top Gun',
+  fullplot: `Lieutenant Pete "Maverick" Mitchell is an expert United States Naval Aviator. When he encounters a pair of MiGs over the Persian Gulf, his wingman is clearly outflown and freaks. On almost no fuel, Maverick is able to talk him back down to the carrier. When his wingman turns in his wings, Maverick is moved up in the standings and sent to the Top Gun Naval Flying School. There he fights the attitudes of the other pilots and an old story of his father's death in combat that killed others due to his father's error. Maverick struggles to be the best pilot, stepping on the toes of his other students and in another way to Charlie Blackwood, a civilian instructor to whom he is strongly attracted.`,
+  languages: [
+    'English'
+  ],
+  released: 1986-05-16T00:00:00.000Z,
+  directors: [
+    'Tony Scott'
+  ],
+  writers: [
+    'Jim Cash',
+    'Jack Epps Jr.',
+    'Ehud Yonay (magazine article "Top Guns")'
+  ],
+  awards: {
+    wins: 10,
+    nominations: 5,
+    text: 'Won 1 Oscar. Another 9 wins & 5 nominations.'
+  },
+  lastupdated: '2015-08-23 00:18:22.953000000',
+  year: 1986,
+  imdb: {
+    rating: 6.8,
+    votes: 201161,
+    id: 92099
+  },
+  countries: [
+    'USA'
+  ],
+  type: 'movie'
+}
+{
+  _id: ObjectId('573a1398f29313caabcead94'),
+  fullplot: "After leaving the Army, Brian Flanagan tries to get a marketing job in New York. But without a college degree, this was not possible. He then decides to start studying for a business degree at the local City College and gets a part time job as a bartender. He realizes that its not that easy, but when his new boss Douglas Coughlin teaches him the secrets of the bar trade and they become the most famous bartenders in town. Both Brian and Doug Coughlin want their own top class cocktail bars someday and Brian's Cocktail Bar is to be called 'Cocktails & Dreams', and in order to get the necessary money to open it, Brian travels to Jamaica to work as a bartender at a resort Tiki Bar, and the pay is good. There he meets Jordan Mooney, a young and pretty, up and coming American artist on vacation with her girlfriend from New York, staying at the Island resort. Jordan and Brian spend some quality time together and fall in love. But when Brian takes a dare from his old buddy, Doug Coughlin to sleep with an older woman, who is also staying at the resort. Jordan, herself the daughter of wealthy parents back in New York, leaves the Island overnight, after seeing Brian and the older woman together after closing... Will Jordan ever forgive Brian and will they get back together?",
+  imdb: {
+    rating: 5.8,
+    votes: 55770,
+    id: 94889
+  },
+  year: 1988,
+  plot: 'A talented New York bartender takes a job at a bar in Jamaica and falls in love.',
+  genres: [
+    'Comedy',
+    'Drama',
+    'Romance'
+  ],
+  rated: 'R',
+  metacritic: 12,
+  title: 'Cocktail',
+  lastupdated: '2015-09-13 00:39:04.247000000',
+  languages: [
+    'English',
+    'Spanish Sign Language'
+  ],
+  writers: [
+    'Heywood Gould (screenplay)'
+  ],
+  type: 'movie',
+  tomatoes: {
+    viewer: {
+      rating: 3,
+      numReviews: 106596,
+      meter: 58
+    },
+    dvd: 2002-08-13T00:00:00.000Z,
+    critic: {
+      rating: 3.9,
+      numReviews: 39,
+      meter: 5
+    },
+    lastUpdated: 2015-09-17T17:07:31.000Z,
+    consensus: "There are no surprises in Cocktail, a shallow, dramatically inert romance that squanders Tom Cruise's talents in what amounts to a naive barkeep's banal fantasy.",
+    rotten: 37,
+    production: 'Touchstone Pictures',
+    fresh: 2
+  },
+  poster: 'https://m.media-amazon.com/images/M/MV5BZDBhYTdkYzMtYTE5Yi00ZDg1LThiYmYtZDI3ZTA5NjVkZWY2XkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SY1000_SX677_AL_.jpg',
+  num_mflix_comments: 2,
+  released: 1988-07-29T00:00:00.000Z,
+  awards: {
+    wins: 6,
+    nominations: 4,
+    text: 'Nominated for 1 Golden Globe. Another 5 wins & 4 nominations.'
+  },
+  countries: [
+    'USA'
+  ],
+  cast: [
+    'Tom Cruise',
+    'Bryan Brown',
+    'Elisabeth Shue',
+    'Lisa Banes'
+  ],
+  directors: [
+    'Roger Donaldson'
+  ],
+  runtime: 104
+}
+{
+  _id: ObjectId('573a1398f29313caabceb17a'),
+  fullplot: `Charles Sanford "Charlie" Babbit is a self-centered Los Angeles-based automobile dealer/hustler/bookie who is at war with his own life. Charlie, as a young teenager, used his father's 1948 Buick convertible without permission and as a result, he went to jail for two days on account that his father reported it stolen. It is then that Charlie learns that his estranged father died and left him from his last will and testament a huge bed of roses and the car while the remainder will of $3 Million goes into a trust fund to be distributed to someone. Charlie seemed pretty angry by this and decides to look into this matter. It seems as if that "someone" is Raymond, Charlie's unknown brother, an autistic savant who lives in a world of his own, resides at the Walbrook Institute. Charlie then kidnaps Raymond and decides to take him on a lust for life trip to the west coast as a threat to get the $3 Million inheritance. Raymond's acts and nagging, including repeated talks of "Abbott & Costello", "Four minutes till Wapner" and refusal to fly on an airline except Quantas drives Charlie insane... and out of his selfish world into a cross-country trek of pure love and understanding that these two both have.`,
+  imdb: {
+    rating: 8,
+    votes: 359903,
+    id: 95953
+  },
+  year: 1988,
+  plot: "Selfish yuppie Charlie Babbitt's father left a fortune to his savant brother Raymond and a pittance to Charlie; they travel cross-country.",
+  genres: [
+    'Drama'
+  ],
+  rated: 'R',
+  metacritic: 65,
+  title: 'Rain Man',
+  lastupdated: '2015-09-01 00:44:44.303000000',
+  languages: [
+    'English',
+    'Italian'
+  ],
+  writers: [
+    'Barry Morrow (story)',
+    'Ronald Bass (screenplay)',
+    'Barry Morrow (screenplay)'
+  ],
+  type: 'movie',
+  tomatoes: {
+    viewer: {
+      rating: 3.8,
+      numReviews: 312071,
+      meter: 90
+    },
+    dvd: 2000-01-01T00:00:00.000Z,
+    critic: {
+      rating: 7.9,
+      numReviews: 69,
+      meter: 90
+    },
+    lastUpdated: 2015-09-14T18:46:45.000Z,
+    consensus: "This road-trip movie about an autistic savant and his callow brother is far from seamless, but Barry Levinson's direction is impressive, and strong performances from Tom Cruise and Dustin Hoffman add to its appeal.",
+    rotten: 7,
+    production: 'MGM',
+    fresh: 62
+  },
+  poster: 'https://m.media-amazon.com/images/M/MV5BMzVjNzI4NzYtMjE4NS00M2IzLWFkOWMtOTYwMWUzN2ZlNGVjL2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SY1000_SX677_AL_.jpg',
+  num_mflix_comments: 0,
+  released: 1988-12-16T00:00:00.000Z,
+  awards: {
+    wins: 27,
+    nominations: 19,
+    text: 'Won 4 Oscars. Another 23 wins & 19 nominations.'
+  },
+  countries: [
+    'USA'
+  ],
+  cast: [
+    'Dustin Hoffman',
+    'Tom Cruise',
+    'Valeria Golino',
+    'Gerald R. Molen'
+  ],
+  directors: [
+    'Barry Levinson'
+  ],
+  runtime: 133
+}
+{
+  _id: ObjectId('573a1398f29313caabceb551'),
+  fullplot: 'The biography of Ron Kovic. Paralyzed in the Vietnam war, he becomes an anti-war and pro-human rights political activist after feeling betrayed by the country he fought for.',
+  imdb: {
+    rating: 7.2,
+    votes: 71370,
+    id: 96969
+  },
+  year: 1989,
+  plot: 'The biography of Ron Kovic. Paralyzed in the Vietnam war, he becomes an anti-war and pro-human rights political activist after feeling betrayed by the country he fought for.',
+  genres: [
+    'Biography',
+    'Drama',
+    'War'
+  ],
+  rated: 'R',
+  metacritic: 75,
+  title: 'Born on the Fourth of July',
+  lastupdated: '2015-08-18 00:19:53.313000000',
+  languages: [
+    'English',
+    'Spanish'
+  ],
+  writers: [
+    'Ron Kovic (book)',
+    'Oliver Stone (screenplay)',
+    'Ron Kovic (screenplay)'
+  ],
+  type: 'movie',
+  tomatoes: {
+    viewer: {
+      rating: 3.4,
+      numReviews: 58642,
+      meter: 76
+    },
+    dvd: 1998-04-28T00:00:00.000Z,
+    critic: {
+      rating: 7.4,
+      numReviews: 39,
+      meter: 90
+    },
+    lastUpdated: 2015-08-17T18:30:04.000Z,
+    consensus: 'Led by an unforgettable performance from Tom Cruise, Born on the Fourth of July finds director Oliver Stone tackling thought-provoking subject matter with ambitious èlan.',
+    rotten: 4,
+    production: 'Universal Pictures',
+    fresh: 35
+  },
+  poster: 'https://m.media-amazon.com/images/M/MV5BMTgwNDk5NTA0NF5BMl5BanBnXkFtZTgwMTkyMDUxMDE@._V1_SY1000_SX677_AL_.jpg',
+  num_mflix_comments: 0,
+  released: 1990-01-05T00:00:00.000Z,
+  awards: {
+    wins: 19,
+    nominations: 18,
+    text: 'Won 2 Oscars. Another 17 wins & 18 nominations.'
+  },
+  countries: [
+    'USA'
+  ],
+  cast: [
+    'Tom Cruise',
+    'Raymond J. Barry',
+    'Caroline Kava',
+    'Josh Evans'
+  ],
+  directors: [
+    'Oliver Stone'
+  ],
+  runtime: 145
+}
+{
+  plot: 'A young hot-shot stock car driver gets his chance to compete at the top level.',
+  genres: [
+    'Action',
+    'Drama',
+    'Sport'
+  ],
+  rated: 'PG-13',
+  metacritic: 60,
+  title: 'Days of Thunder',
+  lastupdated: '2015-09-05 00:38:36.993000000',
+  languages: [
+    'English',
+    'French'
+  ],
+  writers: [
+    'Robert Towne (story)',
+    'Tom Cruise (story)',
+    'Robert Towne (screenplay)'
+  ],
+  type: 'movie',
+  tomatoes: {
+    viewer: {
+      rating: 3,
+      numReviews: 131907,
+      meter: 61
+    },
+    dvd: 1999-05-25T00:00:00.000Z,
+    critic: {
+      rating: 4.8,
+      numReviews: 58,
+      meter: 38
+    },
+    lastUpdated: 2015-09-13T18:15:54.000Z,
+    consensus: "Days of Thunder has Tom Cruise and plenty of flash going for it, but they aren't enough to compensate for the stock plot, two-dimensional characters, and poorly written dialogue.",
+    rotten: 36,
+    production: 'Paramount Home Video',
+    fresh: 22
+  },
+  poster: 'https://m.media-amazon.com/images/M/MV5BNjc5NjQ1ODIzN15BMl5BanBnXkFtZTgwMjkwNTg4NjE@._V1_SY1000_SX677_AL_.jpg',
+  num_mflix_comments: 1,
+  released: 1990-06-27T00:00:00.000Z,
+  awards: {
+    wins: 2,
+    nominations: 0,
+    text: 'Nominated for 1 Oscar. Another 1 win.'
+  },
+  countries: [
+    'USA'
+  ],
+  cast: [
+    'Tom Cruise',
+    'Nicole Kidman',
+    'Robert Duvall',
+    'Randy Quaid'
+  ],
+  directors: [
+    'Tony Scott'
+  ],
+  runtime: 107
+}
+{
+  _id: ObjectId('573a1399f29313caabced0dc'),
+  fullplot: `In this dramatic courtroom thriller, LT Daniel Kaffee, a Navy lawyer who has never seen the inside of the courtroom, defends two stubborn Marines who have been accused of murdering a colleague. Kaffee is known as being lazy and had arranged for a plea bargain. Downey's Aunt Ginny appoints Cmdr. Galloway to represent him. Also on the legal staff is LTJG Sam Weinberg. The team rounds up many facts and Kaffee is discovering that he is really cut out for trial work. The defense is originally based upon the fact that PFC Santiago, the victim, was given a "CODE RED". Santiago was basically a screw-up. At Gitmo, screw-ups aren't tolerated. Especially by Col. Nathan Jessup. In Cuba, Jessup and two senior officers try to give all the help they can, but Kaffee knows something's fishy. In the conclusion of the film, the fireworks are set off by a confrontation between Jessup and Kaffee.`,
+  imdb: {
+    rating: 7.6,
+    votes: 169302,
+    id: 104257
+  },
+  year: 1992,
+  plot: 'Neo military lawyer Kaffee defends Marines accused of murder; they contend they were acting under orders.',
+  genres: [
+    'Drama',
+    'Thriller'
+  ],
+  rated: 'R',
+  metacritic: 62,
+  title: 'A Few Good Men',
+  lastupdated: '2015-09-02 00:08:43.990000000',
+  languages: [
+    'English'
+  ],
+  writers: [
+    'Aaron Sorkin (play)',
+    'Aaron Sorkin (screenplay)'
+  ],
+  type: 'movie',
+  tomatoes: {
+    viewer: {
+      rating: 3.6,
+      numReviews: 323844,
+      meter: 89
+    },
+    dvd: 1997-10-07T00:00:00.000Z,
+    critic: {
+      rating: 7,
+      numReviews: 57,
+      meter: 81
+    },
+    lastUpdated: 2015-09-12T17:29:05.000Z,
+    consensus: 'An old-fashioned courtroom drama with a contemporary edge, A Few Good Men succeeds on the strength of its stars, with Tom Cruise, Demi Moore, and especially Jack Nicholson delivering powerful performances that more than compensate for the predictable plot.',
+    rotten: 11,
+    production: 'Columbia Pictures',
+    fresh: 46
+  },
+  poster: 'https://m.media-amazon.com/images/M/MV5BMmRlZDQ1MmUtMzE2Yi00YTkxLTk1MGMtYmIyYWQwODcxYzRlXkEyXkFqcGdeQXVyNTI4MjkwNjA@._V1_SY1000_SX677_AL_.jpg',
+  num_mflix_comments: 1,
+  released: 1992-12-11T00:00:00.000Z,
+  awards: {
+    wins: 14,
+    nominations: 15,
+    text: 'Nominated for 4 Oscars. Another 10 wins & 15 nominations.'
+  },
+  countries: [
+    'USA'
+  ],
+  cast: [
+    'Tom Cruise',
+    'Jack Nicholson',
+    'Demi Moore',
+    'Kevin Bacon'
+  ],
+  directors: [
+    'Rob Reiner'
+  ],
+  runtime: 138
+}
+{
+  _id: ObjectId('573a1399f29313caabced0be'),
+  plot: "A young man leaves Ireland with his landlord's daughter after some trouble with her father, and they dream of owning land at the big give-away in Oklahoma ca. 1893. When they get to the new...",
+  genres: [
+    'Adventure',
+    'Drama',
+    'Romance'
+  ],
+  runtime: 140,
+  metacritic: 49,
+  rated: 'PG-13',
+  cast: [
+    'Tom Cruise',
+    'Nicole Kidman',
+    'Thomas Gibson',
+    'Robert Prosky'
+  ],
+  poster: 'https://m.media-amazon.com/images/M/MV5BN2FiZTMzOGQtODQ2Ny00ZGFlLThiMDgtMTdhMjg4ZWM1MWMzXkEyXkFqcGdeQXVyNjc1NTYyMjg@._V1_SY1000_SX677_AL_.jpg',
+  title: 'Far and Away',
+  fullplot: "A young man leaves Ireland with his landlord's daughter after some trouble with her father, and they dream of owning land at the big give-away in Oklahoma ca. 1893. When they get to the new land, they find jobs and begin saving money. The man becomes a local bare-hands boxer, and rides in glory until he is beaten, then his employers steal all the couple's money and they must fight off starvation in the winter, and try to keep their dream of owning land alive. Meanwhile, the woman's parents find out where she has gone and have come to the U.S. to find her and take her back.",
+  languages: [
+    'English'
+  ],
+  released: 1992-05-22T00:00:00.000Z,
+  directors: [
+    'Ron Howard'
+  ],
+  writers: [
+    'Bob Dolman (story)',
+    'Ron Howard (story)',
+    'Bob Dolman (screenplay)'
+  ],
+  awards: {
+    wins: 0,
+    nominations: 3,
+    text: '3 nominations.'
+  },
+  lastupdated: '2015-09-10 17:10:08.037000000',
+  year: 1992,
+  imdb: {
+    rating: 6.5,
+    votes: 44770,
+    id: 104231
+  },
+  countries: [
+    'USA'
+  ],
+  type: 'movie',
+  tomatoes: {
+    viewer: {
+      rating: 3.2,
+      numReviews: 59455,
+      meter: 62
+    },
+    dvd: 1998-06-23T00:00:00.000Z,
+    critic: {
+      rating: 5.2,
+      numReviews: 24,
+      meter: 50
+    },
+    lastUpdated: 2015-09-13T18:04:24.000Z,
+    rotten: 12,
+    production: 'Universal Pictures',
+    fresh: 12
+  },
+  num_mflix_comments: 0
+}
+{
+  _id: ObjectId('573a1399f29313caabcedaf2'),
+  fullplot: "Mitch McDeere is a young man with a promising future in Law. About to sit his Bar exam, he is approached by 'The Firm' and made an offer he doesn't refuse. Seduced by the money and gifts showered on him, he is totally oblivious to the more sinister side of his company. Then, two Associates are murdered. The FBI contact him, asking him for information and suddenly his life is ruined. He has a choice - work with the FBI, or stay with the Firm. Either way he will lose his life as he knows it. Mitch figures the only way out is to follow his own plan...",
+  imdb: {
+    rating: 6.8,
+    votes: 82531,
+    id: 106918
+  },
+  year: 1993,
+  plot: 'A young lawyer joins a prestigious law firm only to discover that it has a sinister dark side.',
+  genres: [
+    'Drama',
+    'Mystery',
+    'Thriller'
+  ],
+  rated: 'R',
+  metacritic: 58,
+  title: 'The Firm',
+  lastupdated: '2015-09-12 00:01:03.173000000',
+  languages: [
+    'English'
+  ],
+  writers: [
+    'John Grisham (novel)',
+    'David Rabe (screenplay)',
+    'Robert Towne (screenplay)',
+    'David Rayfiel (screenplay)'
+  ],
+  type: 'movie',
+  tomatoes: {
+    viewer: {
+      rating: 3.2,
+      numReviews: 67181,
+      meter: 64
+    },
+    dvd: 2000-05-23T00:00:00.000Z,
+    critic: {
+      rating: 6.2,
+      numReviews: 52,
+      meter: 75
+    },
+    lastUpdated: 2015-09-12T17:03:51.000Z,
+    rotten: 13,
+    production: 'Paramount Pictures',
+    fresh: 39
+  },
+  poster: 'https://m.media-amazon.com/images/M/MV5BMTgxMjM5NDYwM15BMl5BanBnXkFtZTgwODkzMzk5MDE@._V1_SY1000_SX677_AL_.jpg',
+  num_mflix_comments: 0,
+  released: 1993-06-30T00:00:00.000Z,
+  awards: {
+    wins: 4,
+    nominations: 4,
+    text: 'Nominated for 2 Oscars. Another 2 wins & 4 nominations.'
+  },
+  countries: [
+    'USA'
+  ],
+  cast: [
+    'Tom Cruise',
+    'Jeanne Tripplehorn',
+    'Gene Hackman',
+    'Hal Holbrook'
+  ],
+  directors: [
+    'Sydney Pollack'
+  ],
+  runtime: 154
+}
+{
+  _id: ObjectId('573a139af29313caabcf0000'),
+  fullplot: "Jerry Maguire (Tom Cruise) is a successful sports agent. The biggest clients, the respect, a beautiful fiancèe, he has it all. Until one night he questions his purpose. His place in the world, and finally comes to terms with what's wrong with his career and life. Recording all his thoughts in a mission statement Jerry feels he has a new lease on life. Unfortunately his opinions aren't met with enthusiasm from his superiors and after dishonorably being stripped of his high earning clients and elite status within the agency Jerry steps out into the sports business armed with only one volatile client (Cuba Gooding Jr.) and the only person with belief in his abilities (Renèe Zellweger) with the impossible task of rebuilding what he once had. Along the way he faces the harsh truths which he'd ignored in the past and a host of hardships that he'd never faced before.",
+  imdb: {
+    rating: 7.3,
+    votes: 176229,
+    id: 116695
+  },
+  year: 1996,
+  plot: 'When a sports agent has a moral epiphany and is fired for expressing it, he decides to put his new philosophy to the test as an independent with the only athlete who stays with him.',
+  genres: [
+    'Comedy',
+    'Drama',
+    'Romance'
+  ],
+  rated: 'R',
+  metacritic: 77,
+  title: 'Jerry Maguire',
+  lastupdated: '2015-09-04 00:19:15.507000000',
+  languages: [
+    'English',
+    'American Sign Language'
+  ],
+  writers: [
+    'Cameron Crowe'
+  ],
+  type: 'movie',
+  tomatoes: {
+    viewer: {
+      rating: 3.3,
+      numReviews: 440994,
+      meter: 79
+    },
+    dvd: 1997-06-24T00:00:00.000Z,
+    critic: {
+      rating: 7.4,
+      numReviews: 59,
+      meter: 85
+    },
+    lastUpdated: 2015-09-14T20:08:33.000Z,
+    consensus: "Anchored by dazzling performances from Tom Cruise, Cuba Gooding Jr., and Renèe Zellweger, as well as Cameron Crowe's tender direction, Jerry Maguire meshes romance and sports with panache.",
+    rotten: 9,
+    production: 'TriStar Pictures',
+    fresh: 50
+  },
+  poster: 'https://m.media-amazon.com/images/M/MV5BYTM0ZWNmZTUtOTVkZS00MTZiLTg3M2QtZjA0Y2RmOWM1NWEyXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SY1000_SX677_AL_.jpg',
+  num_mflix_comments: 0,
+  released: 1996-12-13T00:00:00.000Z,
+  awards: {
+    wins: 29,
+    nominations: 31,
+    text: 'Won 1 Oscar. Another 28 wins & 31 nominations.'
+  },
+  countries: [
+    'USA'
+  ],
+  cast: [
+    'Tom Cruise',
+    'Cuba Gooding Jr.',
+    'Renèe Zellweger',
+    'Kelly Preston'
+  ],
+  directors: [
+    'Cameron Crowe'
+  ],
+  runtime: 139
+}
+{
+  _id: ObjectId('573a139af29313caabcf0178'),
+  fullplot: `Based on the hit T.V. series. Jim Phelps was sent to Prague for a mission to prevent the theft of classified material. His wife Claire and his trusted partner Ethan Hunt were members of Phelps' team. Unfortunately, something went horribly wrong and the mission failed, leaving Ethan Hunt the lone survivor. After he reported the failed mission, Kettridge the head of the agency suspects Ethan of being the culprit for the failed mission. Now, Ethan uses unorthodox methods (Which includes the aid of an arms dealer going by the name "Max") to try to find who set him up and to clear his name.`,
+  imdb: {
+    rating: 7.1,
+    votes: 272913,
+    id: 117060
+  },
+  year: 1996,
+  plot: 'An American agent, under false suspicion of disloyalty, must discover and expose the real spy without the help of his organization.',
+  genres: [
+    'Action',
+    'Adventure',
+    'Thriller'
+  ],
+  rated: 'PG-13',
+  metacritic: 59,
+  title: 'Mission: Impossible',
+  lastupdated: '2015-09-05 00:31:54.770000000',
+  languages: [
+    'English',
+    'French',
+    'Czech'
+  ],
+  writers: [
+    'Bruce Geller (television series)',
+    'David Koepp (story)',
+    'Steven Zaillian (story)',
+    'David Koepp (screenplay)',
+    'Robert Towne (screenplay)'
+  ],
+  type: 'movie',
+  tomatoes: {
+    website: 'http://www.missionimpossible.com/',
+    viewer: {
+      rating: 3.3,
+      numReviews: 865182,
+      meter: 71
+    },
+    dvd: 1998-01-17T00:00:00.000Z,
+    critic: {
+      rating: 6,
+      numReviews: 50,
+      meter: 62
+    },
+    lastUpdated: 2015-09-12T17:28:21.000Z,
+    consensus: "Full of special effects, Brian DePalma's update of Mission: Impossible has a lot of sweeping spectacle, but the plot is sometimes convoluted.",
+    rotten: 19,
+    production: 'Paramount Pictures',
+    fresh: 31
+  },
+  poster: 'https://m.media-amazon.com/images/M/MV5BMTc3NjI2MjU0Nl5BMl5BanBnXkFtZTgwNDk3ODYxMTE@._V1_SY1000_SX677_AL_.jpg',
+  num_mflix_comments: 153,
+  released: 1996-05-22T00:00:00.000Z,
+  awards: {
+    wins: 3,
+    nominations: 13,
+    text: '3 wins & 13 nominations.'
+  },
+  countries: [
+    'USA'
+  ],
+  cast: [
+    'Tom Cruise',
+    'Jon Voight',
+    'Emmanuelle Bèart',
+    'Henry Czerny'
+  ],
+  directors: [
+    'Brian De Palma'
+  ],
+  runtime: 110
+}
+{
+  _id: ObjectId('573a139af29313caabcf0e9a'),
+  plot: 'A New York City doctor, who is married to an art curator, pushes himself on a harrowing and dangerous night-long odyssey of sexual and moral discovery after his wife admits that she once almost cheated on him.',
+  genres: [
+    'Drama',
+    'Mystery',
+    'Thriller'
+  ],
+  runtime: 159,
+  metacritic: 68,
+  rated: 'R',
+  cast: [
+    'Tom Cruise',
+    'Nicole Kidman',
+    'Sydney Pollack',
+    'Marie Richardson'
+  ],
+  poster: 'https://m.media-amazon.com/images/M/MV5BMjA5NTUwNjI1N15BMl5BanBnXkFtZTYwOTE1ODc5._V1_SY1000_SX677_AL_.jpg',
+  title: 'Eyes Wide Shut',
+  fullplot: "A doctor becomes obsessed with having a sexual encounter after his wife admits to having sexual fantasies about a man she met and chastising him for dishonesty in not admitting to his own fantasies. This sets him off into unfulfilled encounters with a dead patient's daughter and a hooker. But when he visits a nightclub, where a pianist friend Nick Nightingale is playing, he learns about a secret sexual group and decides to attend one of their congregations. However, he quickly learns he is in well over his head and finds he and his family are threatened.",
+  languages: [
+    'English'
+  ],
+  released: 1999-07-16T00:00:00.000Z,
+  directors: [
+    'Stanley Kubrick'
+  ],
+  writers: [
+    'Stanley Kubrick (screenplay)',
+    'Frederic Raphael (screenplay)',
+    'Arthur Schnitzler (inspired by the novel by)'
+  ],
+  awards: {
+    wins: 6,
+    nominations: 24,
+    text: 'Nominated for 1 Golden Globe. Another 5 wins & 24 nominations.'
+  },
+  lastupdated: '2015-09-16 00:33:12.757000000',
+  year: 1999,
+  imdb: {
+    rating: 7.3,
+    votes: 210043,
+    id: 120663
+  },
+  countries: [
+    'UK',
+    'USA'
+  ],
+  type: 'movie',
+  tomatoes: {
+    website: 'http://eyeswideshut.warnerbros.com',
+    viewer: {
+      rating: 3,
+      numReviews: 190392,
+      meter: 73
+    },
+    dvd: 2000-03-07T00:00:00.000Z,
+    critic: {
+      rating: 7.5,
+      numReviews: 146,
+      meter: 74
+    },
+    lastUpdated: 2015-09-15T17:45:12.000Z,
+    consensus: "Kubrick's intense study of the human psyche yields an impressive cinematic work.",
+    rotten: 38,
+    production: 'Warner Bros. Pictures',
+    fresh: 108
+  },
+  num_mflix_comments: 0
+}
+{
+  _id: ObjectId('573a139af29313caabcf0eef'),
+  plot: 'A secret agent is sent to Sydney, to find and destroy a genetically modified disease called "Chimera".',
+  genres: [
+    'Action',
+    'Adventure',
+    'Thriller'
+  ],
+  runtime: 123,
+  metacritic: 59,
+  rated: 'PG-13',
+  cast: [
+    'Tom Cruise',
+    'Dougray Scott',
+    'Thandie Newton',
+    'Ving Rhames'
+  ],
+  poster: 'https://m.media-amazon.com/images/M/MV5BN2RkYWVkZDQtNTMxMi00NWQ4LWE2ODctNmQzOWM2NjQzYzdlXkEyXkFqcGdeQXVyMjUzOTY1NTc@._V1_SY1000_SX677_AL_.jpg',
+  title: 'Mission: Impossible II',
+  fullplot: "IMF agent Ethan Hunt has been sent on a mission to retrieve and destroy the supply of a genetically created disease called 'Chimera'. His mission is made impossible due to the fact that he is not the only person after samples of the disease. He must also contest with a gang of international terrorists headed by a turned bad former IMF agent who has already managed to steal the cure called 'Bellerophon' and now need 'Chimera' to complete their grand plan of infecting the whole world. In order to infiltrate and locate the terrorist group he relies on the help of an international thief Nyah of whom he quickly develops a love interest. Time is not only running out for Agent Hunt to find and destroy 'Chimera' before the terrorists get their hands on it, but he must also find 'Bellerophon' so as to save his love interest who has already become infected by the disease from a terrible and rapid death.",
+  languages: [
+    'English'
+  ],
+  released: 2000-05-24T00:00:00.000Z,
+  directors: [
+    'John Woo'
+  ],
+  writers: [
+    'Bruce Geller',
+    'Ronald D. Moore (story)',
+    'Brannon Braga (story)',
+    'Robert Towne (screenplay)'
+  ],
+  awards: {
+    wins: 10,
+    nominations: 18,
+    text: '10 wins & 18 nominations.'
+  },
+  lastupdated: '2015-09-03 00:40:57.350000000',
+  year: 2000,
+  imdb: {
+    rating: 6,
+    votes: 219038,
+    id: 120755
+  },
+  countries: [
+    'USA',
+    'Germany'
+  ],
+  type: 'movie',
+  tomatoes: {
+    viewer: {
+      rating: 2.6,
+      numReviews: 63,
+      meter: 50
+    },
+    dvd: 2003-07-08T00:00:00.000Z,
+    production: 'Vanguard',
+    lastUpdated: 2015-09-12T17:28:20.000Z
+  },
+  num_mflix_comments: 0
+}
+{
+  _id: ObjectId('573a139ff29313caabcff3cf'),
+  fullplot: `In the year 2054 A.D. crime is virtually eliminated from Washington D.C. thanks to an elite law enforcing squad "Precrime". They use three gifted humans (called "Pre-Cogs") with special powers to see into the future and predict crimes beforehand. John Anderton heads Precrime and believes the system's flawlessness steadfastly. However one day the Pre-Cogs predict that Anderton will commit a murder himself in the next 36 hours. Worse, Anderton doesn't even know the victim. He decides to get to the mystery's core by finding out the 'minority report' which means the prediction of the female Pre-Cog Agatha that "might" tell a different story and prove Anderton innocent.`,
+  imdb: {
+    rating: 7.7,
+    votes: 369160,
+    id: 181689
+  },
+  year: 2002,
+  plot: 'In a future where a special police unit is able to arrest murderers before they commit their crimes, an officer from that unit is himself accused of a future murder.',
+  genres: [
+    'Action',
+    'Mystery',
+    'Sci-Fi'
+  ],
+  rated: 'PG-13',
+  metacritic: 80,
+  title: 'Minority Report',
+  lastupdated: '2015-09-04 00:02:16.007000000',
+  languages: [
+    'English',
+    'Swedish'
+  ],
+  writers: [
+    'Philip K. Dick (short story)',
+    'Scott Frank (screenplay)',
+    'Jon Cohen (screenplay)'
+  ],
+  type: 'movie',
+  tomatoes: {
+    website: 'http://www.minorityreport.com',
+    viewer: {
+      rating: 3.4,
+      numReviews: 478637,
+      meter: 80
+    },
+    dvd: 2002-12-17T00:00:00.000Z,
+    critic: {
+      rating: 8.1,
+      numReviews: 239,
+      meter: 90
+    },
+    boxOffice: '$131.9M',
+    consensus: 'Thought-provoking and visceral, Steven Spielberg successfully combines high concept ideas and high octane action in this fast and febrile sci-fi thriller.',
+    rotten: 23,
+    production: 'Dreamworks',
+    lastUpdated: 2015-09-12T17:29:01.000Z,
+    fresh: 216
+  },
+  poster: 'https://m.media-amazon.com/images/M/MV5BZTI3YzZjZjEtMDdjOC00OWVjLTk0YmYtYzI2MGMwZjFiMzBlXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SY1000_SX677_AL_.jpg',
+  num_mflix_comments: 1,
+  released: 2002-06-21T00:00:00.000Z,
+  awards: {
+    wins: 18,
+    nominations: 66,
+    text: 'Nominated for 1 Oscar. Another 17 wins & 66 nominations.'
+  },
+  countries: [
+    'USA'
+  ],
+  cast: [
+    'Tom Cruise',
+    'Max von Sydow',
+    'Steve Harris',
+    'Neal McDonough'
+  ],
+  directors: [
+    'Steven Spielberg'
+  ],
+  runtime: 145
+}
+{
+  _id: ObjectId('573a13a4f29313caabd11954'),
+  fullplot: `Incarcerated and charged with murder, David Aames Jr. is telling the story of how he got to where he is to McCabe, the police psychologist. That story includes: being the 51% shareholder of a major publishing firm, which he inherited from his long deceased parents; the firm's board, appointed by David Aames Sr., being the 49% shareholders who would probably like to see him gone as they see him as being too irresponsible and immature to run the company; his best bro friendship with author, Brian Shelby; his "friends with benefits" relationship with Julie Gianni, who saw their relationship in a slightly different light; his budding romance with Sofia Serrano, who Brian brought to David's party as his own date and who Brian saw as his own possible life mate; and being in an accident which disfigured his face and killed the person who caused the accident. But as the story proceeds, David isn't sure what is real and what is a dream/nightmare as many facets of the story are incompatible to be all real. The mysterious man in the restaurant may be able to shed some light on David's confusion.`,
+  imdb: {
+    rating: 6.9,
+    votes: 195303,
+    id: 259711
+  },
+  year: 2001,
+  plot: 'A self-indulgent and vain publishing magnate finds his privileged life upended after a vehicular accident with a resentful lover.',
+  genres: [
+    'Fantasy',
+    'Mystery',
+    'Romance'
+  ],
+  rated: 'R',
+  metacritic: 45,
+  title: 'Vanilla Sky',
+  lastupdated: '2015-09-13 00:58:03.470000000',
+  languages: [
+    'English',
+    'Spanish'
+  ],
+  writers: [
+    'Alejandro Amenèbar (film "Abre Los Ojos")',
+    'Mateo Gil (film "Abre Los Ojos")',
+    'Cameron Crowe (screenplay)'
+  ],
+  type: 'movie',
+  tomatoes: {
+    website: 'http://www.vanillasky.com',
+    viewer: {
+      rating: 3,
+      numReviews: 296994,
+      meter: 72
+    },
+    dvd: 2002-05-21T00:00:00.000Z,
+    critic: {
+      rating: 5.3,
+      numReviews: 165,
+      meter: 41
+    },
+    boxOffice: '$100.5M',
+    consensus: "An ambitious mix of genres, Vanilla Sky collapses into an incoherent jumble. Cruise's performance lacks depth, and it's hard to feel sympathy for his narcissistic character.",
+    rotten: 97,
+    production: 'Paramount Pictures',
+    lastUpdated: 2015-09-14T17:09:53.000Z,
+    fresh: 68
+  },
+  poster: 'https://m.media-amazon.com/images/M/MV5BYzFlMTJjYzUtMWFjYy00NjkyLTg1Y2EtYmZkMjdlOGQ1ZGYwL2ltYWdlXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SY1000_SX677_AL_.jpg',
+  num_mflix_comments: 1,
+  released: 2001-12-14T00:00:00.000Z,
+  awards: {
+    wins: 7,
+    nominations: 20,
+    text: 'Nominated for 1 Oscar. Another 6 wins & 20 nominations.'
+  },
+  countries: [
+    'USA',
+    'Spain'
+  ],
+  cast: [
+    'Tom Cruise',
+    'Penèlope Cruz',
+    'Cameron Diaz',
+    'Kurt Russell'
+  ],
+  directors: [
+    'Cameron Crowe'
+  ],
+  runtime: 136
+}
+{
+  _id: ObjectId('573a13a6f29313caabd18c89'),
+  plot: 'The first 3D live-action film to be shot in space. Using advanced 3D-technology, the film depicts the greatest engineering happening since a man landed on the Moon in 1969. Amongst these is...',
+  genres: [
+    'Documentary'
+  ],
+  runtime: 47,
+  metacritic: 69,
+  cast: [
+    'Tom Cruise',
+    'James Arnold',
+    'Michael J. Bloomfield',
+    'Robert D. Cabana'
+  ],
+  num_mflix_comments: 1,
+  poster: 'https://m.media-amazon.com/images/M/MV5BZTQxZjc1MTMtMGEyNy00ZmM0LWE2MzktOWViNTRkYjQ0MWVkXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SY1000_SX677_AL_.jpg',
+  title: 'Space Station 3D',
+  fullplot: 'The first 3D live-action film to be shot in space. Using advanced 3D-technology, the film depicts the greatest engineering happening since a man landed on the Moon in 1969. Amongst these is the on-orbit assembly of the International Space Station as it travels 220 miles above the Earth at the speed of 17,500 mph. The film also has included sequences that portray the force of a rocket launch, as well as a look into the depths of space. You will experience life in zero gravity, and accompany the astronauts on a space walk. The film was an immense success in theaters in 2002, and is the highest grossing film ever not release in more than 100 theaters at the same time.',
+  languages: [
+    'English'
+  ],
+  released: 2002-04-19T00:00:00.000Z,
+  directors: [
+    'Toni Myers'
+  ],
+  writers: [
+    'Toni Myers'
+  ],
+  awards: {
+    wins: 1,
+    nominations: 1,
+    text: '1 win & 1 nomination.'
+  },
+  lastupdated: '2015-08-20 00:25:41.283000000',
+  year: 2002,
+  imdb: {
+    rating: 7.5,
+    votes: 1251,
+    id: 290296
+  },
+  countries: [
+    'Canada',
+    'USA'
+  ],
+  type: 'movie',
+  tomatoes: {
+    website: 'http://www.imax.com/spacestation/',
+    viewer: {
+      rating: 3.6,
+      numReviews: 2751,
+      meter: 76
+    },
+    dvd: 2005-07-19T00:00:00.000Z,
+    critic: {
+      rating: 6.9,
+      numReviews: 23,
+      meter: 87
+    },
+    boxOffice: '$90.0M',
+    rotten: 3,
+    production: 'IMAX Corp',
+    lastUpdated: 2015-08-14T18:40:13.000Z,
+    fresh: 20
+  }
+}
+{
+  _id: ObjectId('573a13a9f29313caabd1f42d'),
+  fullplot: "Super-spy Ethan Hunt has retired from active duty to train new IMF agents. But he is called back into action to confront the toughest villain he's ever faced - Owen Davian, an international weapons and information provider with no remorse and no conscience. Hunt assembles his team: his old friend Luther Strickell, transportation expert Declan, and background operative Zhen. They are to rescue one of his very own trainees, Lindsey who was kidnapped while on a surveillance detail of Davian. It soon becomes evident that Davian is well-protected, well-connected, and downright malicious. This forces Hunt to extend his journey back into the field in order to rescue his wife, Julia, and uncover IMF double agents in the process.",
+  imdb: {
+    rating: 6.9,
+    votes: 231998,
+    id: 317919
+  },
+  year: 2006,
+  plot: 'Agent Ethan Hunt comes into conflict with a dangerous and sadistic arms dealer who threatens his life and his fianceè in response .',
+  genres: [
+    'Action',
+    'Adventure',
+    'Thriller'
+  ],
+  rated: 'PG-13',
+  metacritic: 66,
+  title: 'Mission: Impossible III',
+  lastupdated: '2015-09-04 00:13:28.693000000',
+  languages: [
+    'English',
+    'Italian',
+    'Mandarin',
+    'Cantonese',
+    'German',
+    'Czech'
+  ],
+  writers: [
+    'Alex Kurtzman',
+    'Roberto Orci',
+    'J.J. Abrams',
+    'Bruce Geller (television series)'
+  ],
+  type: 'movie',
+  tomatoes: {
+    website: 'http://www.missionimpossible.com/',
+    viewer: {
+      rating: 3.4,
+      numReviews: 506944,
+      meter: 69
+    },
+    dvd: 2006-10-30T00:00:00.000Z,
+    critic: {
+      rating: 6.6,
+      numReviews: 219,
+      meter: 70
+    },
+    boxOffice: '$133.4M',
+    consensus: 'Fast-paced, with eye-popping stunts and special effects, the latest Mission: Impossible installment delivers everything an action fan could ask for. A thrilling summer popcorn flick.',
+    rotten: 66,
+    production: 'Paramount Pictures',
+    lastUpdated: 2015-09-11T17:16:16.000Z,
+    fresh: 153
+  },
+  poster: 'https://m.media-amazon.com/images/M/MV5BOThhNTA1YjItYzk2Ny00M2Y1LWJlYWUtZDQyZDU0YmY5Y2M5XkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SY1000_SX677_AL_.jpg',
+  num_mflix_comments: 1,
+  released: 2006-05-05T00:00:00.000Z,
+  awards: {
+    wins: 7,
+    nominations: 14,
+    text: '7 wins & 14 nominations.'
+  },
+  countries: [
+    'USA',
+    'Germany',
+    'China'
+  ],
+  cast: [
+    'Tom Cruise',
+    'Philip Seymour Hoffman',
+    'Ving Rhames',
+    'Billy Crudup'
+  ],
+  directors: [
+    'J.J. Abrams'
+  ],
+  runtime: 126
+}
+{
+  _id: ObjectId('573a13aaf29313caabd21193'),
+  fullplot: "In the 1870s, Captain Nathan Algren, a cynical veteran of the American Civil war who will work for anyone, is hired by Americans who want lucrative contracts with the Emperor of Japan to train the peasant conscripts for the first standing imperial army in modern warfare using firearms. The imperial Omura cabinet's first priority is to repress a rebellion of traditionalist Samurai -hereditary warriors- who remain devoted to the sacred dynasty but reject the Westernizing policy and even refuse firearms. Yet when his ill-prepared superior force sets out too soon, their panic allows the sword-wielding samurai to crush them. Badly wounded Algren's courageous stand makes the samurai leader Katsumoto spare his life; once nursed to health he learns to know and respect the old Japanese way, and participates as advisor in Katsumoto's failed attempt to save the Bushido tradition, but Omura gets repressive laws enacted- he must now choose to honor his loyalty to one of the embittered sides when the conflict returns to the battlefield...",
+  imdb: {
+    rating: 7.7,
+    votes: 292651,
+    id: 325710
+  },
+  year: 2003,
+  plot: 'An American military advisor embraces the Samurai culture he was hired to destroy after he is captured in battle.',
+  genres: [
+    'Action',
+    'Drama',
+    'History'
+  ],
+  rated: 'R',
+  metacritic: 55,
+  title: 'The Last Samurai',
+  lastupdated: '2015-09-05 00:58:24.977000000',
+  languages: [
+    'English',
+    'Japanese'
+  ],
+  writers: [
+    'John Logan (story)',
+    'John Logan (screenplay)',
+    'Edward Zwick (screenplay)',
+    'Marshall Herskovitz (screenplay)'
+  ],
+  type: 'movie',
+  tomatoes: {
+    website: 'http://lastsamurai.warnerbros.com/html_index.php',
+    viewer: {
+      rating: 3.7,
+      numReviews: 390384,
+      meter: 83
+    },
+    dvd: 2004-05-04T00:00:00.000Z,
+    critic: {
+      rating: 6.4,
+      numReviews: 216,
+      meter: 65
+    },
+    boxOffice: '$111.1M',
+    consensus: 'With high production values and thrilling battle scenes, The Last Samurai is a satisfying epic.',
+    rotten: 75,
+    production: 'Warner Bros. Pictures',
+    lastUpdated: 2015-09-13T17:01:30.000Z,
+    fresh: 141
+  },
+  poster: 'https://m.media-amazon.com/images/M/MV5BMzkyNzQ1Mzc0NV5BMl5BanBnXkFtZTcwODg3MzUzMw@@._V1_SY1000_SX677_AL_.jpg',
+  num_mflix_comments: 0,
+  released: 2003-12-05T00:00:00.000Z,
+  awards: {
+    wins: 24,
+    nominations: 44,
+    text: 'Nominated for 4 Oscars. Another 20 wins & 44 nominations.'
+  },
+  countries: [
+    'USA',
+    'New Zealand',
+    'Japan'
+  ],
+  cast: [
+    'Ken Watanabe',
+    'Tom Cruise',
+    'William Atherton',
+    'Chad Lindberg'
+  ],
+  directors: [
+    'Edward Zwick'
+  ],
+  runtime: 154
+}
+Type "it" for more
+db.movies.find({ cast: { $in: ['Tom Cruise'] } }).count()
+29
+db.movies.find({ cast: { $in: ['Rebecca Ferguson'], $nin: ['Tom Cruise'] } }).count()
+1
+db.movies.find({ cast: { $in: ['Rebecca Ferguson', 'Richard Masur'] } }).count()
+9
+db.movies.find({ $and: [{type: 'series'}, {year: 2004}] }).count()
+8
+db.movies.find({ $or: [{type: 'series'}, {year: 2004}] }).count()
+902
+db.movies.find({ $and: [{ cast: {$in: ['Tom Cruise']} }, { cast: {$in: 'Rebecca Ferguson'} }] }).count()
+MongoServerError[BadValue]: $in needs an array
+db.movies.find({ $and: [ { cast: {$in: ['Tom Cruise'] } }, {cast: {$in: ['Rebecca Ferguson'] } } ] }).count()
+0
+db.movies.find({ $or: [{$and: [{cast: {$in: 'Tom Cruise'} }, {year: 2004}] }, {cast: {$in: ['Rebecca Fergusson']}}] }).count()
+MongoServerError[BadValue]: $in needs an array
+db.movies.find({ $or: [{$and: [{cast: {$in: ['Tom Cruise']} }, {year: 2004}] }, {cast: {$in: ['Rebecca Fergusson']}}] }).count()
+1
+db.movies.find({ $and: [{cast: {$in: ['Tom Cruise']} }, {cast: {$in: ['Richard Masur']}}] }).find()
+TypeError: db.movies.find ... }}] }).find is not a function
+db.movies.find({ $and: [{cast: {$in: ['Tom Cruise']} }, {cast: {$in: ['Richard Masur']}}] }).count()
+1
+db.movies.find({ cast: {$all: ['Tom Cruise', 'Richard Masur']} }).count()
+1
+db.movies.find({ "imdb.rating": {$gt: 9} }).count()
+20
+db.movies.find({}, {title: 1})
+{
+  _id: ObjectId('573a1390f29313caabcd42e8'),
+  title: 'The Great Train Robbery'
+}
+{
+  _id: ObjectId('573a1390f29313caabcd516c'),
+  title: 'In the Land of the Head Hunters'
+}
+{
+  _id: ObjectId('573a1390f29313caabcd446f'),
+  title: 'A Corner in Wheat'
+}
+{
+  _id: ObjectId('573a1390f29313caabcd6377'),
+  title: 'Wild and Woolly'
+}
+{
+  _id: ObjectId('573a1391f29313caabcd7616'),
+  title: 'Salomè'
+}
+{
+  _id: ObjectId('573a1390f29313caabcd50e5'),
+  title: 'Gertie the Dinosaur'
+}
+{
+  _id: ObjectId('573a1390f29313caabcd587d'),
+  title: 'Regeneration'
+}
+{
+  _id: ObjectId('573a1390f29313caabcd4eaf'),
+  title: 'Traffic in Souls'
+}
+{
+  _id: ObjectId('573a1390f29313caabcd5293'),
+  title: 'The Perils of Pauline'
+}
+{
+  _id: ObjectId('573a1391f29313caabcd72f0'),
+  title: "Tol'able David"
+}
+{
+  _id: ObjectId('573a1390f29313caabcd5ea4'),
+  title: 'Where Are My Children?'
+}
+{
+  _id: ObjectId('573a1390f29313caabcd6223'),
+  title: 'The Poor Little Rich Girl'
+}
+{
+  _id: ObjectId('573a1391f29313caabcd71f5'),
+  title: 'Now or Never'
+}
+{
+  _id: ObjectId('573a1390f29313caabcd56df'),
+  title: 'The Italian'
+}
+{
+  _id: ObjectId('573a1390f29313caabcd5a93'),
+  title: 'Civilization'
+}
+{
+  _id: ObjectId('573a1391f29313caabcd6f98'),
+  title: 'The Ace of Hearts'
+}
+{
+  _id: ObjectId('573a1391f29313caabcd70b4'),
+  title: 'The Four Horsemen of the Apocalypse'
+}
+{
+  _id: ObjectId('573a1391f29313caabcd6e2a'),
+  title: 'One Week'
+}
+{
+  _id: ObjectId('573a1391f29313caabcd6ea2'),
+  title: 'The Saphead'
+}
+{
+  _id: ObjectId('573a1390f29313caabcd63d6'),
+  title: 'The Blue Bird'
+}
+Type "it" for more
+db.movies.find({}, {title: 1}).limit(3)
+{
+  _id: ObjectId('573a1390f29313caabcd42e8'),
+  title: 'The Great Train Robbery'
+}
+{
+  _id: ObjectId('573a1390f29313caabcd516c'),
+  title: 'In the Land of the Head Hunters'
+}
+{
+  _id: ObjectId('573a1390f29313caabcd446f'),
+  title: 'A Corner in Wheat'
+}
+db.movies.find({}, {title: 1}).limit(3).skip(3)
+{
+  _id: ObjectId('573a1390f29313caabcd6377'),
+  title: 'Wild and Woolly'
+}
+{
+  _id: ObjectId('573a1391f29313caabcd7616'),
+  title: 'Salomè'
+}
+{
+  _id: ObjectId('573a1390f29313caabcd50e5'),
+  title: 'Gertie the Dinosaur'
+}
+Atlas atlas-uisnd8-shard-0 [primary] sample_mflix
+
