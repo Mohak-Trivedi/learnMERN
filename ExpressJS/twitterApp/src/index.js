@@ -1,7 +1,10 @@
 import express from "express";
+import morgan from "morgan";
 
 // Create a new express app/server object
 const app = express();
+
+app.use(morgan("combined"));
 
 function mid1(req, res, next) {
   console.log("mid1");
