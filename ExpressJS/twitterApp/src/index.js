@@ -3,10 +3,31 @@ import express from "express";
 // Create a new express app/server object
 const app = express();
 
-app.get("/ping", (req, res) => {
+function mid1(req, res, next) {
+  console.log("mid1");
+  next();
+}
+
+function mid2(req, res, next) {
+  console.log("mid2");
+  next();
+}
+
+function mid3(req, res, next) {
+  console.log("mid3");
+  next();
+}
+
+app.get("/ping", mid1, mid2, mid3, (req, res) => {
   return res.json({
     message: "pong",
   }); // return this upon GET ping/ request
+});
+
+app.post("/hello", (req, res) => {
+  return res.json({
+    message: "world",
+  });
 });
 
 // Define a port and attach it to the Express app
