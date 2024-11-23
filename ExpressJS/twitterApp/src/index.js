@@ -6,6 +6,9 @@ const app = express();
 
 app.use(morgan("combined"));
 
+app.use(express.json());
+app.use(express.urlencoded());
+
 function mid1(req, res, next) {
   console.log("mid1");
   next();
@@ -35,13 +38,14 @@ app.get("/ping", [mid1, mid2, mid3], (req, res) => {
 });
 
 app.post("/hello", [mid1, mid3], (req, res) => {
-  console.log(req.query);
+  console.log("query params", req.query);
+  console.log("req body", req.body);
   return res.json({
     message: "world",
   });
 });
 
-app.get("/tweets/:tweet_id", (req, res) => {
+app.get("/tweets/:tweet_id/comments/:comment_id", (req, res) => {
   console.log(req.params);
   return res.json({
     message: "tweet_details",
