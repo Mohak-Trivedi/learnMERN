@@ -1,10 +1,25 @@
 import express from "express";
 import morgan from "morgan";
+// import the below ones to be able to use __dirname even in ES6 Moduling, as
+// it is available only in CommonJS moduling.
+import * as url from "url";
 
 // Create a new express app/server object
 const app = express();
 
+const __filename = url.fileURLToPath(import.meta.url);
+const __dirname = url.fileURLToPath(new URL(".", import.meta.url));
+
+console.log(__filename); // Full path to the current file
+console.log(__dirname); // Directory path of the current file
+
+// Set ejs as the View Engine
 app.set("view engine", "ejs");
+
+// Set the path for views. Without this, we get the following error:
+// Error: Failed to lookup view "views/index.ejs" in views
+// directory "C:\Users\trive\Documents\algoCamp-mern\ExpressJS\twitterApp\views"
+app.set("views", __dirname + "/views");
 
 app.use(morgan("combined"));
 
@@ -33,6 +48,10 @@ function commonMiddleware(req, res, next) {
 }
 
 app.use(commonMiddleware);
+
+app.get("/", (req, res) => {
+  res.render("home");
+});
 
 app.get("/ping", [mid1, mid2, mid3], (req, res) => {
   return res.json({
