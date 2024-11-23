@@ -50,7 +50,7 @@ function commonMiddleware(req, res, next) {
 app.use(commonMiddleware);
 
 app.get("/", (req, res) => {
-  res.render("home");
+  res.render("home", { name: "John Doe" });
 });
 
 app.get("/ping", [mid1, mid2, mid3], (req, res) => {
