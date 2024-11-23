@@ -41,6 +41,13 @@ app.post("/hello", [mid1, mid3], (req, res) => {
   });
 });
 
+app.get("/tweets/:tweet_id", (req, res) => {
+  console.log(req.params);
+  return res.json({
+    message: "tweet_details",
+  });
+});
+
 // Define a port and attach it to the Express app
 app.listen(3000, () => {
   console.log("Server is running on port 3000.");
