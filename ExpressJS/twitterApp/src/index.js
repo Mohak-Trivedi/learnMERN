@@ -4,6 +4,8 @@ import morgan from "morgan";
 // Create a new express app/server object
 const app = express();
 
+app.set("view engine", "ejs");
+
 app.use(morgan("combined"));
 
 app.use(express.json()); // to enable Express to read JSON req body data
