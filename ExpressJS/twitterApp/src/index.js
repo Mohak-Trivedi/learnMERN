@@ -6,8 +6,9 @@ const app = express();
 
 app.use(morgan("combined"));
 
-app.use(express.json());
-app.use(express.urlencoded());
+app.use(express.json()); // to enable Express to read JSON req body data
+app.use(express.text()); // to enable Express to read text req body data
+app.use(express.urlencoded()); // to enable Express to read x-www-form-urlencoded req body data
 
 function mid1(req, res, next) {
   console.log("mid1");
@@ -49,6 +50,12 @@ app.get("/tweets/:tweet_id/comments/:comment_id", (req, res) => {
   console.log(req.params);
   return res.json({
     message: "tweet_details",
+  });
+});
+
+app.all("*", (req, res) => {
+  return res.status(404).json({
+    message: "Not Found",
   });
 });
 
