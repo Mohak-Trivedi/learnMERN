@@ -35,6 +35,7 @@ app.get("/ping", [mid1, mid2, mid3], (req, res) => {
 });
 
 app.post("/hello", [mid1, mid3], (req, res) => {
+  console.log(req.query);
   return res.json({
     message: "world",
   });
