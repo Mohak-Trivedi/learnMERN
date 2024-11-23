@@ -18,13 +18,20 @@ function mid3(req, res, next) {
   next();
 }
 
-app.get("/ping", mid1, mid2, mid3, (req, res) => {
+function commonMiddleware(req, res, next) {
+  console.log("common middleware");
+  next();
+}
+
+app.use(commonMiddleware);
+
+app.get("/ping", [mid1, mid2, mid3], (req, res) => {
   return res.json({
     message: "pong",
   }); // return this upon GET ping/ request
 });
 
-app.post("/hello", (req, res) => {
+app.post("/hello", [mid1, mid3], (req, res) => {
   return res.json({
     message: "world",
   });
