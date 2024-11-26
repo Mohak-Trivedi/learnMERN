@@ -4,6 +4,7 @@ import morgan from "morgan";
 // it is available only in CommonJS moduling.
 import * as url from "url";
 import { PORT } from "./config/serverConfig.js";
+import tweetRouter from "./routes/tweet.js";
 
 // Create a new express app/server object
 const app = express();
@@ -28,6 +29,8 @@ app.use(morgan("combined"));
 app.use(express.json()); // to enable Express to read JSON req body data
 app.use(express.text()); // to enable Express to read text req body data
 app.use(express.urlencoded()); // to enable Express to read x-www-form-urlencoded req body data
+
+app.use("/tweets", tweetRouter);
 
 function mid1(req, res, next) {
   console.log("mid1");
