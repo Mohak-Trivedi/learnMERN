@@ -9,7 +9,6 @@ const app = express();
 
 const __filename = url.fileURLToPath(import.meta.url);
 const __dirname = url.fileURLToPath(new URL(".", import.meta.url));
-
 console.log(__filename); // Full path to the current file
 console.log(__dirname); // Directory path of the current file
 
@@ -17,8 +16,10 @@ console.log(__dirname); // Directory path of the current file
 app.set("view engine", "ejs");
 
 // Set the path for views. Without this, we get the following error:
-// Error: Failed to lookup view "views/index.ejs" in views
+// Error: Failed to lookup view "views/home.ejs" in views
 // directory "C:\Users\trive\Documents\algoCamp-mern\ExpressJS\twitterApp\views"
+// because it expects views directory in project directory's root, but we have
+// it one level deeper i.e. in "src"
 app.set("views", __dirname + "/views");
 
 app.use(morgan("combined"));
@@ -57,21 +58,6 @@ app.get("/ping", [mid1, mid2, mid3], (req, res) => {
   return res.json({
     message: "pong",
   }); // return this upon GET ping/ request
-});
-
-app.post("/hello", [mid1, mid3], (req, res) => {
-  console.log("query params", req.query);
-  console.log("req body", req.body);
-  return res.json({
-    message: "world",
-  });
-});
-
-app.get("/tweets/:tweet_id/comments/:comment_id", (req, res) => {
-  console.log(req.params);
-  return res.json({
-    message: "tweet_details",
-  });
 });
 
 app.all("*", (req, res) => {
