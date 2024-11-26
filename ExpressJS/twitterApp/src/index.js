@@ -3,6 +3,7 @@ import morgan from "morgan";
 // import the below ones to be able to use __dirname even in ES6 Moduling, as
 // it is available only in CommonJS moduling.
 import * as url from "url";
+import { PORT } from "./config/serverConfig.js";
 
 // Create a new express app/server object
 const app = express();
@@ -67,6 +68,6 @@ app.all("*", (req, res) => {
 });
 
 // Define a port and attach it to the Express app
-app.listen(3000, () => {
-  console.log("Server is running on port 3000.");
+app.listen(PORT, () => {
+  console.log(`Server is running on port ${PORT}.`);
 });
