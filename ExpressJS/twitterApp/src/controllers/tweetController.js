@@ -10,3 +10,10 @@ export const getTweetById = (req, res) => {
     id: req.params.id,
   });
 };
+
+export const createTweet = (req, res) => {
+  return res.json({
+    message: "Welcome to the tweet route",
+    body: req.body,
+  });
+};
