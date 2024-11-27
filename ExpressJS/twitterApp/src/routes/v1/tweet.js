@@ -1,20 +1,12 @@
 import express from "express";
+import { getTweetById, getTweets } from "../../controllers/tweetController.js";
 
 // Create a new router object
 const router = express.Router();
 
-router.get("/", (req, res) => {
-  return res.json({
-    message: "Welcome to the tweet route",
-  });
-});
+router.get("/", getTweets);
 
-router.get("/:id", (req, res) => {
-  return res.json({
-    message: "Welcome to the tweet route",
-    id: req.params.id,
-  });
-});
+router.get("/:id", getTweetById);
 
 // Export the router object
 export default router;
