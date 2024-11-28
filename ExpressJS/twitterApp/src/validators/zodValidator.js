@@ -1,4 +1,5 @@
-export default validate = (schema) => {
+export const validate = (schema) => {
+  // return a validator middleware
   return async (req, res, next) => {
     try {
       console.log(req.body);

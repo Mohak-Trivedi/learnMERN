@@ -4,7 +4,9 @@ import {
   getTweetById,
   getTweets,
 } from "../../controllers/tweetController.js";
-import { createTweetManualValidator } from "../../validators/tweetManualValidator.js";
+// import { createTweetManualValidator } from "../../validators/tweetManualValidator.js";
+import { validate } from "../../validators/zodValidator.js";
+import { tweetZodSchema } from "../../validators/tweetZodSchema.js";
 
 // Create a new router object
 const router = express.Router();
