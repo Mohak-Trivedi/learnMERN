@@ -13,7 +13,8 @@ router.get("/", getTweets);
 
 router.get("/:id", getTweetById);
 
-router.post("/", createTweetManualValidator, createTweet);
+// router.post("/", createTweetManualValidator, createTweet);
+router.post("/", validate(tweetZodSchema), createTweet);
 
 // Export the router object
 export default router;
