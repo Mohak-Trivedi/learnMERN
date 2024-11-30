@@ -1,10 +1,10 @@
-import Tweet from "../schema/tweet";
+import Tweet from "../schema/tweet.js";
 
 export const createTweet = async ({ tweet }) => {
   try {
     // Create and save a document in Tweet collection
-    const tweet = await Tweet.create({ tweet });
-    return tweet;
+    const tweetObj = await Tweet.create({ tweet });
+    return tweetObj;
   } catch (error) {
     throw error;
   }
